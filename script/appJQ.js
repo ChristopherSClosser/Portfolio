@@ -9,6 +9,7 @@ $(document).ready(function(){
     }
   });
 
+  var x = $('#main-nav');
   var w = $(window).width();
   if(w >= 500) {
     console.log('the window is larger than ', w);

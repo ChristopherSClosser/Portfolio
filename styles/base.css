@@ -1,14 +1,13 @@
 /*some css for mobile view*/
 html{
   font-family: sans-serif;
-  min-width: 300px;
 }
-
 a{
   color: inherit;
   text-decoration: none;
 }
-div{
+section{
+  margin: 2%;
   height: 100px;
   margin-top: 50px;
   border: 1px solid black;
@@ -23,9 +22,7 @@ div{
   font-weight: bolder;
   margin-left: 2%;
 }
-.name{
-  height: 100px;
-}
+
 .hidden{
   display: none;
 }
