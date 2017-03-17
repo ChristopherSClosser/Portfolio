@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chris Closser</title>
     <link rel="stylesheet" href="vendor/reset.css">
     <link rel="stylesheet" href="styles/base.css">
+    <script id="project-template" type="text/x-handlebars"> <!--type must be this for Handlebars use-->
+      <h1>{{title}}</h1>
+      <hr>
+      <!--trip handlebars will render correctly html-->
+      <p>{{{body}}}</p>
+      <img{{thumbImg}}>
+      <br>
+      <p>{{dateCreated}}</p>
+      <hr>
+    </script>
   </head>
   <body>
     <header class="header">
@@ -34,7 +43,7 @@
     <section class="gallery">
 
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
 
     </section>
     <section class="me-info">
@@ -42,6 +51,8 @@
     </section>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+  <script type="text/javascript" src="script/raw.js"></script>
   <script type="text/javascript" src="script/appJQ.js"></script>
   <script type="text/javascript" src="script/projects.js">
 

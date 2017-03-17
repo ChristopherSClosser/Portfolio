@@ -1,16 +1,28 @@
 'use strict';
 
-Project.prototype.toHtml = function() {
-  var $newProject = $('project.template').clone().removeClass('template');
+var projects = [];//this will store my projects
 
-  $newProject.attr('data-category', this.category);
-  $newProject.attr('data-author', this.author);
-  $newProject.find('.byline a').text(this.author);
-  $newProject.find('.byline a').attr('href', this.authorUrl);
-  $newProject.find('h1:first').text(this.title);
-  $newProject.find('.article-body').html(this.body);
-  $newProject.find('time[pubdate]').attr('datetime', this.dateCreated);
-  $newProject.find('time[pubdate]').attr('title', this.dateCreated);
-
-  return $newProject;
+function Project (rawProjectData) {
+  for (var key in rawProjectData) {
+    this[key] = rawProjectData[key];
+  }
 };
+
+//method for Project that renders it to the DOM
+Project.prototype.toHtml = function() {
+  var source = $('#project-template').html();
+  var templateRender = Handlebars.compile(source);
+  return templateRender(this);
+};
+
+projectDataSet.forEach(function(projectObject) {
+  projects.push(new Project(projectObject));
+});
+
+projects.forEach(function(myNewProjectObject){
+  $('#projects').append(myNewProjectObject.toHtml());
+});
+
+$(function(){//same as $(document).ready(function(){});
+  //do some stuff
+});
