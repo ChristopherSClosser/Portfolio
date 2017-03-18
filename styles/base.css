@@ -37,7 +37,7 @@ img{
   margin-left: 2%;
 }
 
-.hidden{
+.hidden, .template{
   display: none;
 }
 #main-nav ul{
@@ -50,7 +50,7 @@ img{
   background: #f1f1f1;
   font-size: 19px;
   margin: auto;
-  padding: 4%;  
+  padding: 4%;
   right: 0;
 }
 
@@ -86,9 +86,9 @@ img{
     width: 100%;
   }
   #main-nav ul{
-    display: inline-block;
+    display: inline-flex;
     text-align: center;
-    padding: 0;
+    padding: 1%;
     vertical-align: middle;
     width: 420px;
   }

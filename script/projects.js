@@ -10,9 +10,13 @@ function Project (rawProjectData) {
 
 //method for Project that renders it to the DOM
 Project.prototype.toHtml = function() {
-  var source = $('#project-template').html();
-  var templateRender = Handlebars.compile(source);
-  return templateRender(this);
+  var $newProject = $('section.template').clone().removeClass('template');
+
+  $newProject.find('h1:first').html(this.title);
+  $newProject.find('.body').html(this.body);
+  $newProject.find('.date').text(this.dateCreated);
+
+  return $newProject;
 };
 
 projectDataSet.forEach(function(projectObject) {
@@ -21,8 +25,4 @@ projectDataSet.forEach(function(projectObject) {
 
 projects.forEach(function(myNewProjectObject){
   $('#projects').append(myNewProjectObject.toHtml());
-});
-
-$(function(){//same as $(document).ready(function(){});
-  //do some stuff
 });
