@@ -3,6 +3,7 @@
 $(function(){
   $('.burger').on('click', function() {
     if ($('nav').is(':hidden')) {
+      
       $('#main-nav').slideDown('slow');
     } else {
       $('#main-nav').slideUp('fast');
@@ -10,9 +11,9 @@ $(function(){
   });
   $('.list-projects').on('click', function() {
     if ($('ul').is(':hidden')) {
-      $('#project').slideDown('slow');
+      $('#project-list').slideDown('slow');
     } else {
-      $('#project').slideUp('fast');
+      $('#project-list').slideUp('fast');
     }
   });
 });

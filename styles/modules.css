@@ -1,7 +1,7 @@
-#main-nav li:hover{
+/*#main-nav li:hover{
   color: white;
   background-color: black;
-}
+}*/
 /*media query goes here for a screen larger than the min-width */
 @media only screen and (min-width: 500px){
   #main-nav{
@@ -22,10 +22,13 @@
     list-style-type: none;
     margin-right: 2%;
   }
+  .project{
+    display: none;
+  }
   .burger{
     display: none;
   }
-  .hidden hr{
+  .hidden hr {
     display: none;
   }
 }

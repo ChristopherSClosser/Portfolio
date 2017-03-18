@@ -19,6 +19,9 @@ projectDataSet.forEach(function(projectObject) {
   projects.push(new Project(projectObject));
 });
 
-projects.forEach(function(myNewProjectObject) {
+projects.forEach(function(myNewProjectObject, list) {
+  var list = myNewProjectObject.title;
+  $('#project-list').append('<li>' + myNewProjectObject.title + '</li>');
   $('#projects').append(myNewProjectObject.toHtml());
+  console.log(myNewProjectObject.title);
 });
