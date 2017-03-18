@@ -1,6 +1,6 @@
 'use strict';
-
-$(document).ready(function(){
+//function for mobile menu
+$(function(){
   $('.burger').on('click', function () {
     if ( $('nav').is(':hidden') ) {
       $('#main-nav').slideDown('slow');
@@ -9,12 +9,12 @@ $(document).ready(function(){
     }
   });
 
-  var x = $('#main-nav');
-  var w = $(window).width();
-  if(w >= 500) {
-    console.log('the window is larger than ', w);
-    x.removeClass('hidden');
+  var $nav = $('#main-nav');
+  var $w = $(window).width();
+  if($w >= 500) {
+    console.log('the window is larger than ', $w);
+    $nav.removeClass('hidden');
   }else{
-    x.addClass('hidden');
+    $nav.addClass('hidden');
   }
 });
