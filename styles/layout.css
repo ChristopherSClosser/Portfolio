@@ -1,9 +1,10 @@
 .name {
+  display: block;
   margin: auto;
   width: 100%;
   background-image: url("/imgs/boston_harbor.jpg");
   margin-top: 50px;
-  height: 200px;
+  height: 1000px;
   background-size: 100%;
   background-repeat: no-repeat;
 }

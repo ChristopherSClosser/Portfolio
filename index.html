@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/base.css">
     <script id="project-template" type="text/x-handlebars"> <!--type must be this for Handlebars use-->
-      <h1>{{{title}}}</h1>
-      <hr>
-      <!--trip handlebars will render correctly html-->
-      <p>{{{body}}}</p>
-      <img{{{thumbImg}}}>
-      <br>
-      <p>{{dateCreated}}</p><br>
-      <hr><br>
+      <content>
+        <h1>{{{title}}}</h1>
+        <hr>
+        <!--trip handlebars will render correctly html-->
+        <p>{{{body}}}</p>
+        <img{{{thumbImg}}}>
+        <br>
+        <p>{{dateCreated}}</p><br>
+        <hr><br>
+      </content>
     </script>
   </head>
   <body>
@@ -42,7 +44,7 @@
         </ul>
       </nav>
     </header>
-    <section class="name"></section>
+    <element class="name"></element>
     <section class="projects" id="projects"></section>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
