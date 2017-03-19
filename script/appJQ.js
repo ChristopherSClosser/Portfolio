@@ -1,9 +1,10 @@
 'use strict';
-//function for mobile menu
+//function for mobile menu on page ready
 $(function(){
   $('.burger').on('click', function() {
+    $('.project').hide();
     if ($('nav').is(':hidden')) {
-      
+      $('.project').hide();
       $('#main-nav').slideDown('slow');
     } else {
       $('#main-nav').slideUp('fast');
