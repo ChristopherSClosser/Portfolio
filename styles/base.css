@@ -13,46 +13,19 @@ section{
   text-align: center;
   padding: 4%;
 }
-.name {
-  margin: auto;
-  width: 100%;
-  background-image: url("/imgs/boston_harbor.jpg");
-  margin-top: 50px;
-  height: 200px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
+
 img{
   width: 70%;
   margin-top: 2%;
 }
-.my-name{
-  margin: auto;
-  height: inherit;
-  display: inline-block;
-  border: none;
-  transform: translateY(25%);
-  font-size: 20px;
-  font-weight: bolder;
-  margin-left: 2%;
-}
 
+.project{
+  display: none;
+}
 .hidden{
   display: none;
 }
-#main-nav ul{
-  display: block;
-  float: right;
-  list-style-type: none;
-  text-align: right;
-  font-weight: bold;
-  font-size: 0.8em;
-  background: #f1f1f1;
-  font-size: 19px;
-  margin: auto;
-  padding: 4%;  
-  right: 0;
-}
+
 
 .header{
   height: 50px;
@@ -60,10 +33,6 @@ img{
   position: fixed;
   top: 0;
   width: 100%;
-}
-#main-nav li:hover{
-  color: white;
-  background-color: black;
 }
 
 .burger{
@@ -76,31 +45,4 @@ img{
   overflow: hidden;
   outline:none;
   transform: translateY(10%);
-}
-/*media query goes here for a screen larger than the min-width */
-@media only screen and (min-width: 500px){
-  #main-nav{
-    display: inline-block;
-    height: 50px;
-    float: right;
-    width: 100%;
-  }
-  #main-nav ul{
-    display: inline-block;
-    text-align: center;
-    padding: 0;
-    vertical-align: middle;
-    width: 420px;
-  }
-  #main-nav li{
-    display: inline-block;
-    list-style-type: none;
-    margin-right: 2%;
-  }
-  .burger{
-    display: none;
-  }
-  .hidden hr{
-    display: none;
-  }
 }

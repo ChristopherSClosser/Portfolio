@@ -9,14 +9,14 @@ var projectDataSet = [
     thumbImg: ' src="imgs/101.png"'
   },
   {
-    title: '<a href="https://christophersclosser.github.io/About-Me/">Code Fellows Seattle 201</a>',
+    title: '<a href="https://christophersclosser.github.io/About-Me/">About Me</a>',
     body: 'This was my very first 201 gitHub project. I need to go back and do stuff that I now know.',
     dateCreated: 'Feb 8, 2017',
     category: '201',
     thumbImg: ' src="imgs/201about.png"'
   },
   {
-    title: '<a href="https://christophersclosser.github.io/salmon-cookies/">Code Fellows Seattle 201</a>',
+    title: '<a href="https://christophersclosser.github.io/salmon-cookies/">Salmon Cookies</a>',
     body: 'This is my second 201 gitHub project. I need to go back and do stuff that I now know.',
     dateCreated: 'Feb 13, 2017',
     category: '201',

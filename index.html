@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chris Closser</title>
     <link rel="stylesheet" href="vendor/reset.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/base.css">
     <script id="project-template" type="text/x-handlebars"> <!--type must be this for Handlebars use-->
-      <h1>{{{title}}}</h1>
-      <hr>
-      <!--trip handlebars will render correctly html-->
-      <p>{{{body}}}</p>
-      <img{{{thumbImg}}}>
-      <br>
-      <p>{{dateCreated}}</p><br>
-      <hr><br>
+      <content>
+        <h1>{{{title}}}</h1>
+        <hr>
+        <!--trip handlebars will render correctly html-->
+        <p>{{{body}}}</p>
+        <img{{{thumbImg}}}>
+        <br>
+        <p>{{dateCreated}}</p><br>
+        <hr><br>
+      </content>
     </script>
   </head>
   <body>
@@ -29,15 +33,18 @@
           <hr>
           <li><a href="https://github.com/ChristopherSClosser">GitHub</a></li>
           <hr>
-          <li><a href="#">Projects</a></li>
-          <hr>
           <li><a href="#">Gallery</a></li>
           <hr>
           <li><a href="#">Me</a></li>
+          <hr>
+          <li><a class="list-projects" href="#">Projects</a>
+            <ul class="hidden" id="project-list">
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
-    <section class="name"></section>
+    <element class="name"></element>
     <section class="projects" id="projects"></section>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
