@@ -23,7 +23,10 @@ $(function(){
     $('.name').fadeOut();
     var select = ($(this).text());
     projectView.projectFilter(select);
-    console.log(select);
-    $('#project-list').slideUp('fast');
+    $('#project-list').hide();
+
+    if (window.innerWidth <= 500){
+      $('#main-nav').slideUp('fast');
+    }
   });
 });
