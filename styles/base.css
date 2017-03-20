@@ -18,14 +18,9 @@ img{
   width: 70%;
   margin-top: 2%;
 }
-
-.project{
+.hidden, .prject, .me{
   display: none;
 }
-.hidden{
-  display: none;
-}
-
 
 .header{
   height: 50px;

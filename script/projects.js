@@ -34,7 +34,7 @@ projectView.projectFilter = function(select) {
   //$('#project-list li').on('click', function() {
   console.log($('content a:contains("' + select + '")').length);
   $('content').hide();
-  $('content a:contains("' + select + '")').parent().parent().show();
+  $('content a:contains("' + select + '")').parent().parent().fadeIn();
   //console.log('The list project' + select + '', 'The project ' + $('.projects').text());
   //   if (select === projects.title);
   //});
