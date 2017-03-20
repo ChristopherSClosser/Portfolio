@@ -1,7 +1,7 @@
 'use strict';
 //function for mobile menu on page ready
 $(function(){
-  $('section').hide();
+  $('content').hide();
   $('.burger').on('click', function() {
     $('.project').hide();
     if ($('nav').is(':hidden')) {
@@ -20,9 +20,10 @@ $(function(){
   });
   $('#project-list li').on('click', function(e) {
     e.preventDefault();
-    console.log(this);
+    $('.name').fadeOut();
+    var select = ($(this).text());
+    projectView.projectFilter(select);
+    console.log(select);
     $('#project-list').slideUp('fast');
-    $('element').fadeOut('fast');
-    $('.projects').fadeIn('slow');
   });
 });
