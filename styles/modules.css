@@ -1,8 +1,7 @@
 
-/*#main-nav li:hover{
-  color: white;
-  background-color: black;
-}*/
+#main-nav li:hover{
+  color: black;
+}
 content p{
   font-family: 'Amatic SC', sans-serif;
   font-size: 24px;
