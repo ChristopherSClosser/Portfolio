@@ -3,19 +3,26 @@
   color: white;
   background-color: black;
 }*/
+content p{
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #6d6464;
+}
 #main-nav ul{
   display: block;
   float: right;
   list-style-type: none;
   text-align: right;
-  font-weight: bold;
+  font-weight: lighter;;
   font-size: 0.8em;
   background: #f1f1f1;
-  font-size: 19px;
+  font-size: 18px;
   margin: auto;
   padding: 4%;
   right: 0;
 }
+
 /*media query goes here for a screen larger than the min-width */
 @media only screen and (min-width: 500px){
   #main-nav{

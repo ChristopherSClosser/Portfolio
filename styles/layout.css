@@ -17,13 +17,14 @@
   padding: 4%;
 }
 .my-name{
+  /*font-family: 'Permanent Marker', sans-serif;*/
   margin: auto;
   height: inherit;
   display: inline-block;
   border: none;
   transform: translateY(25%);
-  font-size: 20px;
-  font-weight: bolder;
+  font-size: 26px;
+  font-weight: bold;
   margin-left: 2%;
 }
 .hidden, .me{
@@ -36,7 +37,6 @@
   top: 0;
   width: 100%;
 }
-
 .burger{
   font-size: 32px;
   float: right;

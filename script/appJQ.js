@@ -40,6 +40,7 @@ $(function(){
       $('content').hide();
       var select = ($(this).text());
       projectView.projectFilter(select);
+      $('section').show();
     }
 
     $('#project-list').hide();
