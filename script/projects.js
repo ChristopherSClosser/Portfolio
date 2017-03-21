@@ -23,7 +23,7 @@ projectDataSet.forEach(function(projectObject) {
 
 //makes list of projects in nav
 projects.forEach(function(myNewProjectObject) {
-  $('#project-list').append('<li>' + myNewProjectObject.title + '</li>').hide();
+  $('#project-list').append('<li>' + myNewProjectObject.title + '</li><hr>').hide();
   $('#projects').append(myNewProjectObject.toHtml());
 
 });

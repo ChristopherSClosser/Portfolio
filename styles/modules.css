@@ -36,8 +36,7 @@
     list-style-type: none;
     margin-right: 2%;
   }
-  
-  #project-list, #project-list li{
+  #project-list, #project-list li, #project-list hr{
     display: block;
   }
 }
