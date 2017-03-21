@@ -1,12 +1,33 @@
-.hidden, .me{
-  display: none;
+
+.name {
+  display: block;
+  margin: auto;
+  width: 100%;
+  background-image: url("/imgs/boston_harbor.jpg");
+  margin-top: 50px;
+  height: 1000px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .me{
   margin: 2%;
-  margin-top: 50px;
+  margin-top: 83px;
   border: 1px solid black;
   text-align: center;
   padding: 4%;
+}
+.my-name{
+  margin: auto;
+  height: inherit;
+  display: inline-block;
+  border: none;
+  transform: translateY(25%);
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 2%;
+}
+.hidden, .me{
+  display: none;
 }
 .header{
   height: 50px;
@@ -27,39 +48,13 @@
   outline:none;
   transform: translateY(10%);
 }
-.name {
-  display: block;
-  margin: auto;
-  width: 100%;
-  background-image: url("/imgs/boston_harbor.jpg");
-  margin-top: 50px;
-  height: 1000px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.my-name{
-  margin: auto;
-  height: inherit;
-  display: inline-block;
-  border: none;
-  transform: translateY(25%);
-  font-size: 20px;
-  font-weight: bolder;
-  margin-left: 2%;
-}
 #project-list{
-  display: block;
-}
-.list-projects{
   float: right;
+  margin-top: 2%;
+  list-style-type: none;
+  position: absolute;
 }
 @media only screen and (min-width: 500px){
-  #main-nav{
-    display: inline-block;
-    height: 50px;
-    float: right;
-    width: 100%;
-  }
   .project{
     display: none;
   }
