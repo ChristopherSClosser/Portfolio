@@ -8,6 +8,7 @@ $(function(){
     } else {
       $('#main-nav').slideUp('fast');
     }
+    $('nav').show();
   });
   $('.list-projects').on('click', function() {
     if ($('ul').is(':hidden')) {
@@ -42,10 +43,10 @@ $(function(){
     if (window.innerWidth <= 500){
       $('#main-nav').slideUp('fast');
     }
-    $( window ).resize(function() {
-      if (window.innerWidth >= 500){
-        $('nav').css('style', 'display: inline-block');
-      }
-    });
+    // $( window ).resize(function() {
+    //   if (window.innerWidth >= 500){
+    //     $('nav').css('style', 'display: inline-block');
+    //   }
+    // });
   });
 });
