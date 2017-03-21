@@ -2,7 +2,7 @@
 
 var projectDataSet = [
   {
-    title: '<a href="https://christophersclosser.github.io/">Code Fellows Lakewood 101</a>',
+    title: '<a href="https://christophersclosser.github.io/">Lakewood 101</a>',
     body: 'This was my very first gitHub project. Definately not pretty, but you got to start somewhere.',
     dateCreated: 'Nov 5, 2016',
     category: '101',
