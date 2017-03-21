@@ -1,32 +1,4 @@
-.hidden, .me{
-  display: none;
-}
-.me{
-  margin: 2%;
-  margin-top: 50px;
-  border: 1px solid black;
-  text-align: center;
-  padding: 4%;
-}
-.header{
-  height: 50px;
-  background-color: grey;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 
-.burger{
-  font-size: 32px;
-  float: right;
-  background-color: Transparent;
-  background-repeat:no-repeat;
-  border: none;
-  cursor:pointer;
-  overflow: hidden;
-  outline:none;
-  transform: translateY(10%);
-}
 .name {
   display: block;
   margin: auto;
@@ -47,26 +19,25 @@
   font-weight: bolder;
   margin-left: 2%;
 }
-#project-list{
-  display: block;
+.hidden, .me{
+  display: none;
 }
-.list-projects{
+.header{
+  height: 50px;
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.burger{
+  font-size: 32px;
   float: right;
-}
-@media only screen and (min-width: 500px){
-  #main-nav{
-    display: inline-block;
-    height: 50px;
-    float: right;
-    width: 100%;
-  }
-  .project{
-    display: none;
-  }
-  .burger{
-    display: none;
-  }
-  .hidden hr {
-    display: none;
-  }
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  transform: translateY(10%);
 }

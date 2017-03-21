@@ -8,7 +8,7 @@ $(function(){
     } else {
       $('#main-nav').slideUp('fast');
     }
-    $('nav').show();
+    // $('nav').show();
   });
   $('.list-projects').on('click', function() {
     if ($('ul').is(':hidden')) {
