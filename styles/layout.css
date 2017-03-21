@@ -48,6 +48,12 @@
   outline:none;
   transform: translateY(10%);
 }
+#project-list{
+  float: right;
+  margin-top: 2%;
+  list-style-type: none;
+  position: absolute;
+}
 @media only screen and (min-width: 500px){
   .project{
     display: none;

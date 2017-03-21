@@ -12,13 +12,13 @@ $(function(){
   });
   $('.list-projects').on('click', function() {
     if ($('ul').is(':hidden')) {
-      $('#project-list').slideDown('fast');
+      $('#project-list').animate({width:'toggle'},350);
     } else {
       $('#project-list').slideUp('fast');
     }
   });
-  $('#me').on('click', function(e){
-    e.preventDefault();
+  $('#me').on('click', function(){
+
     if (window.innerWidth <= 500){
       $('#main-nav').slideUp('fast');
     }
@@ -43,6 +43,7 @@ $(function(){
     if (window.innerWidth <= 500){
       $('#main-nav').slideUp('fast');
     }
+
     // $( window ).resize(function() {
     //   if (window.innerWidth >= 500){
     //     $('nav').css('style', 'display: inline-block');
