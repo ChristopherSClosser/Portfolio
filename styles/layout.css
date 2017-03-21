@@ -1,3 +1,32 @@
+.hidden, .me{
+  display: none;
+}
+.me{
+  margin: 2%;
+  margin-top: 50px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 4%;
+}
+.header{
+  height: 50px;
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.burger{
+  font-size: 32px;
+  float: right;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  transform: translateY(10%);
+}
 .name {
   display: block;
   margin: auto;
@@ -18,16 +47,26 @@
   font-weight: bolder;
   margin-left: 2%;
 }
-#main-nav ul{
+#project-list{
   display: block;
+}
+.list-projects{
   float: right;
-  list-style-type: none;
-  text-align: right;
-  font-weight: bold;
-  font-size: 0.8em;
-  background: #f1f1f1;
-  font-size: 19px;
-  margin: auto;
-  padding: 4%;
-  right: 0;
+}
+@media only screen and (min-width: 500px){
+  #main-nav{
+    display: inline-block;
+    height: 50px;
+    float: right;
+    width: 100%;
+  }
+  .project{
+    display: none;
+  }
+  .burger{
+    display: none;
+  }
+  .hidden hr {
+    display: none;
+  }
 }

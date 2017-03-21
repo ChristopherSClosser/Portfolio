@@ -13,36 +13,7 @@ section{
   text-align: center;
   padding: 4%;
 }
-
 img{
   width: 70%;
   margin-top: 2%;
-}
-
-.project{
-  display: none;
-}
-.hidden{
-  display: none;
-}
-
-
-.header{
-  height: 50px;
-  background-color: grey;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.burger{
-  font-size: 32px;
-  float: right;
-  background-color: Transparent;
-  background-repeat:no-repeat;
-  border: none;
-  cursor:pointer;
-  overflow: hidden;
-  outline:none;
-  transform: translateY(10%);
 }
