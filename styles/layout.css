@@ -9,6 +9,13 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
+.me{
+  margin: 2%;
+  margin-top: 50px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 4%;
+}
 .my-name{
   margin: auto;
   height: inherit;
@@ -40,4 +47,15 @@
   overflow: hidden;
   outline:none;
   transform: translateY(10%);
+}
+@media only screen and (min-width: 500px){
+  .project{
+    display: none;
+  }
+  .burger{
+    display: none;
+  }
+  .hidden hr {
+    display: none;
+  }
 }

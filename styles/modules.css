@@ -36,15 +36,7 @@
     list-style-type: none;
     margin-right: 2%;
   }
-  .project{
-    display: none;
-  }
-  .burger{
-    display: none;
-  }
-  .hidden hr {
-    display: none;
-  }
+  
   #project-list, #project-list li{
     display: block;
   }
