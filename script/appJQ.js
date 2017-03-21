@@ -1,7 +1,7 @@
 'use strict';
 //function for mobile menu on page ready
 $(function(){
-  $('content').hide();
+  $('section').hide();
 
   $('.burger').on('click', function() {
     if ($('nav').is(':hidden')) {
