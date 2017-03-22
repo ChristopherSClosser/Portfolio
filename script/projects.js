@@ -1,6 +1,6 @@
 'use strict';
 
-var projects = [];//this will store my projects
+Project.all = [];//this will store my projects
 
 //project constructor
 function Project (rawProjectData) {
@@ -16,13 +16,31 @@ Project.prototype.toHtml = function() {
   return templateRender(this);
 };
 
-//creates array of project objects
-projectDataSet.forEach(function(projectObject) {
-  projects.push(new Project(projectObject));
+//creates array of project objects in order
+// Project.loadAll = function(projectDataSet) {
+projectDataSet.sort(function(a,b) {
+  return (new Date(b.dateCreated)) - (new Date(a.dateCreated));
 });
+projectDataSet.forEach(function(projectObject) {
+  Project.all.push(new Project(projectObject));
+});
+// };
+// Project.fetchAll = function() {
+//   if (localStorage.rawData) {
+//     Project.loadAll(JSON.parse(localStorage.rawData));
+//     projectView.initIndexPage();
+//   } else {
+//     Project.loadAll($.getJSON('data/hackerIpsum.json').then(function(data){
+//       localStorage.setItem('data', data);
+//       localStorage.rawData = JSON.stringify(data);
+//       Project.loadAll(data);
+//       projectView.initIndexPage();
+//     }));
+//   }
+// };
 
 //makes list of projects in nav
-projects.forEach(function(myNewProjectObject) {
+Project.all.forEach(function(myNewProjectObject) {
   $('#project-list').append('<li>' + myNewProjectObject.title + '</li><hr>').hide();
   $('#projects').append(myNewProjectObject.toHtml());
 
