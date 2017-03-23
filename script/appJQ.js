@@ -34,13 +34,13 @@ $(function(){
     $('.me').hide();
 
     if ($(this).text() === 'Show all'){
-      $('section').show();
+      $('section').fadeIn();
       $('content').fadeIn();
     }else{
       $('content').hide();
       var select = ($(this).text());
       projectView.projectFilter(select);
-      $('section').show();
+      $('section').fadeIn();
     }
 
     $('#project-list').hide();

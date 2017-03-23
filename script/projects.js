@@ -21,6 +21,7 @@ Project.fetchAll = function() {
   if (localStorage.rawData) {
     var data = JSON.parse(localStorage.rawData);
   } else {
+    //ajax call
     ($.getJSON('data/raw.json').then(function(data){
       localStorage.setItem('data', data);
       localStorage.rawData = JSON.stringify(data);

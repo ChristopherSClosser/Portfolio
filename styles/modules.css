@@ -7,6 +7,9 @@ content p{
 #main-nav li:hover{
   color: black;
 }
+#main-nav li a:hover{
+  text-shadow: 0 0 5px #E5843A;
+}
 #main-nav ul{
   display: block;
   float: right;
@@ -35,6 +38,8 @@ content p{
     padding: 0;
     vertical-align: middle;
     width: 100%;
+    border-top: .5em solid #81766a;
+    border-bottom: .5em solid #81766a;
   }
   #main-nav li{
     display: inline-block;
