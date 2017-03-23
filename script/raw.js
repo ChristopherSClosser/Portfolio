@@ -30,8 +30,15 @@ var projectDataSet = [
     thumbImg: ' src="imgs/choco_pizza.png"'
   },
   {
+    title: '<a href="https://christophersclosser.github.io/bus-mall/">Bus Mall</a>',
+    body: '201 project in which a list of items is shown, and when selected info is displayed in chart form.',
+    dateCreated: 'Feb 20, 2017',
+    category: '201',
+    thumbImg: ' src="imgs/buss_mall.png"'
+  },
+  {
     title: '<a href="https://christophersclosser.github.io/fight-code/">Fight Code</a>',
-    body: '201 final group project in which we created a quiz game with questions pertaining to all we learned in the Code Fellows 201 course.',
+    body: '201 final group project in which we created a quiz game with questions pertaining to all we learned in the Code Fellows 201 course. A group colaboration.',
     dateCreated: 'Feb 24, 2017',
     category: '201',
     thumbImg: ' src="imgs/fight_code.png"'

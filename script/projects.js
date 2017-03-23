@@ -1,6 +1,6 @@
 'use strict';
 
-var projects = [];//this will store my projects
+Project.all = [];//this will store my projects
 
 //project constructor
 function Project (rawProjectData) {
@@ -16,18 +16,48 @@ Project.prototype.toHtml = function() {
   return templateRender(this);
 };
 
-//creates array of project objects
-projectDataSet.forEach(function(projectObject) {
-  projects.push(new Project(projectObject));
-});
+//looks for localStorage and/or saves to
+Project.fetchAll = function() {
+  if (localStorage.rawData) {
+    var data = JSON.parse(localStorage.rawData);
+  } else {
+    //ajax call
+    ($.getJSON('data/raw.json').then(function(data){
+      localStorage.setItem('data', data);
+      localStorage.rawData = JSON.stringify(data);
+    }));
+  }
+  // Project.makeProjects();
+  data.sort(function(a,b) {
+    return (new Date(b.dateCreated)) - (new Date(a.dateCreated));
+  });
+  data.forEach(function(projectObject) {
+    // console.log('this is data', data);
+    Project.all.push(new Project(projectObject));
+  });
+  Project.all.forEach(function(myNewProjectObject) {
+    console.log(myNewProjectObject.title);
+    $('#project-list').append('<li>' + myNewProjectObject.title + '</li><hr>').hide();
+    $('#projects').append(myNewProjectObject.toHtml());
+  });
+};
 
-//makes list of projects in nav
-projects.forEach(function(myNewProjectObject) {
-  $('#project-list').append('<li>' + myNewProjectObject.title + '</li><hr>').hide();
-  $('#projects').append(myNewProjectObject.toHtml());
-
-});
-
+//creates array of project objects in order newest first
+// Project.makeProjects(function(){
+//   data.sort(function(a,b) {
+//     return (new Date(b.dateCreated)) - (new Date(a.dateCreated));
+//   });
+//   data.forEach(function(projectObject) {
+//     // console.log('this is data', data);
+//     Project.all.push(new Project(projectObject));
+//   });
+//   Project.all.forEach(function(myNewProjectObject) {
+//     console.log(myNewProjectObject.title);
+//     $('#project-list').append('<li>' + myNewProjectObject.title + '</li><hr>').hide();
+//     $('#projects').append(myNewProjectObject.toHtml());
+//   });
+// });
+//displays correct project when selected
 var projectView = {};
 
 projectView.projectFilter = function(select) {

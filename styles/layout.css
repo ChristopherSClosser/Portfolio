@@ -4,7 +4,7 @@
   margin: auto;
   width: 100%;
   background-image: url("/imgs/boston_harbor.jpg");
-  margin-top: .5em;
+  margin-top: 2.4em;
   height: 1000px;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -25,13 +25,14 @@
   font-size: 26px;
   font-weight: bold;
   margin-left: 2%;
+  text-shadow: 0 0 3px #e4e4e4;
 }
 .hidden, .me{
   display: none;
 }
 .header{
   height: 50px;
-  background-color: grey;
+  background-color: hsla(24, 67%, 57%, 1);
   position: fixed;
   top: 0;
   width: 100%;
