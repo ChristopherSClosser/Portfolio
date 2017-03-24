@@ -1,5 +1,5 @@
 
-.name {
+.gallery {
   display: block;
   margin: auto;
   width: 100%;
@@ -11,10 +11,11 @@
 }
 .me{
   margin: 2%;
-  margin-top: 83px;
+  margin-top: 3.6em;
   border: 1px solid black;
   text-align: center;
   padding: 4%;
+  background-color: hsla(24, 67%, 57%, 1);
 }
 .my-name{
   margin: auto;
@@ -25,7 +26,8 @@
   font-size: 26px;
   font-weight: bold;
   margin-left: 2%;
-  text-shadow: 0 0 3px #e4e4e4;
+  text-shadow: 0 0 5px rgb(236, 246, 249);
+  color: rgb(60, 45, 31);
 }
 .hidden, .me{
   display: none;

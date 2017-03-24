@@ -16,16 +16,6 @@ Project.prototype.toHtml = function() {
   return templateRender(this);
 };
 
-//creates array of project objects in order newest first
-Project.makeProjects = function(data){
-  data.sort(function(a,b) {
-    return (new Date(b.dateCreated)) - (new Date(a.dateCreated));
-  });
-  data.forEach(function(projectObject) {
-    Project.all.push(new Project(projectObject));
-  });
-};
-
 //looks for localStorage and/or saves to
 Project.fetchAll = function(callback) {
   if (localStorage.rawData) {
@@ -44,4 +34,14 @@ Project.fetchAll = function(callback) {
       console.error(err);
     });
   }
+};
+
+//creates array of project objects in order newest first
+Project.makeProjects = function(data){
+  data.sort(function(a,b) {
+    return (new Date(b.dateCreated)) - (new Date(a.dateCreated));
+  });
+  data.forEach(function(projectObject) {
+    Project.all.push(new Project(projectObject));
+  });
 };

@@ -10,6 +10,13 @@ content p{
 #main-nav li a:hover{
   text-shadow: 0 0 5px #E5843A;
 }
+.me h1{
+  text-shadow: 0 0 5px rgb(236, 246, 249);
+  color: rgb(60, 45, 31);
+}
+.me p{
+  color: rgb(60, 45, 31);
+}
 #main-nav ul{
   display: block;
   float: right;
