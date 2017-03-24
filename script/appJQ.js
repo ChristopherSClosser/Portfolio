@@ -23,14 +23,14 @@ $(function(){
     if (window.innerWidth <= 500){
       $('#main-nav').slideUp('fast');
     }
-    $('.name').fadeOut();
+    $('.gallery').fadeOut();
     $('section').hide();
     $('.me').fadeIn();
   });
 
   $('#project-list li').on('click', function(e) {
     e.preventDefault();
-    $('.name').hide();
+    $('.gallery').hide();
     $('.me').hide();
 
     if ($(this).text() === 'Show all'){
