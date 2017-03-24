@@ -48,5 +48,6 @@ content p{
   }
   #project-list, #project-list li, #project-list hr{
     display: block;
+    margin: 1%;
   }
 }
