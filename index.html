@@ -46,7 +46,20 @@
         </ul>
       </nav>
     </header>
-    <element class="gallery"></element>
+    <div class="gallery">
+      <div class="content display-container">
+        <img class="mySlides" src="imgs/boston_harbor.jpg">
+        <img class="mySlides" src="imgs/boston_harbor_dur.jpg">
+        <img class="mySlides" src="">
+        <div class="center container section large text-white display-bottommiddle">
+          <div class="left hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="right hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+          <span class="badge demo border transparent hover-white" onclick="currentDiv(1)"></span>
+          <span class="badge demo border transparent hover-white" onclick="currentDiv(2)"></span>
+          <span class="badge demo border transparent hover-white" onclick="currentDiv(3)"></span>
+        </div>
+      </div>
+    </div>
     <div class="me">
       <h1>Chris Closser</h1><br>
       <h3>My Code Fellows Life</h3><br>
