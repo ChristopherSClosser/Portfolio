@@ -182,3 +182,12 @@ Article.numWordsAll = () => {
             <span id="badge3" class="badge demo border transparent hover-white"></span>
           </span>
        -->
+
+       //github ajax request
+       $.ajax({
+       	url: 'https://api.github.com/user/repos',
+       	method: 'GET',
+       	headers: {
+       		Authorization: 'token c9399297a86522d18293484ecff456a3168a564b'
+       	}
+       }).then(console.log)
