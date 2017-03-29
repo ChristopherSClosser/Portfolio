@@ -38,7 +38,7 @@ $(function(){
       $('content').fadeIn();
     }else{
       $('content').hide();
-      var select = ($(this).text());
+      let select = ($(this).text());
       projectView.projectFilter(select);
       $('section').fadeIn();
     }
@@ -50,10 +50,20 @@ $(function(){
     }
   });
 
+  //$('#slides > img:gt(0)').hide();
+  // setInterval(function() {
+  //   $('#slides > img:first')
+  //     .fadeOut(500)
+  //     .next()
+  //     .fadeIn(500)
+  //     .end()
+  //     .appendTo('#slides');
+  // },3000);
+
   $(function() {
-    var $window = $(window);
-    var width = $window.width();
-    var height = $window.height();
+    let $window = $(window);
+    let width = $window.width();
+    let height = $window.height();
     setInterval(function () {
       if ((width != $window.width()) || (height != $window.height())) {
         width = $window.width();
@@ -67,4 +77,5 @@ $(function(){
       }
     }, 200);
   });
+
 });

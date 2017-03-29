@@ -1,13 +1,21 @@
-
-.gallery {
+.gallery{
+  position: absolute;
+  top: 4%;
+  z-index: -1;
+}
+.gallery li img{
   display: block;
   margin: auto;
   width: 100%;
-  background-image: url("/imgs/boston_harbor.jpg");
   margin-top: 2.4em;
-  height: 1000px;
-  background-size: 100%;
   background-repeat: no-repeat;
+}
+.content {
+  margin: auto;
+  z-index: -1;
+}
+.mySlides{
+  display: none;
 }
 .me{
   margin: 2%;
@@ -56,6 +64,12 @@
   list-style-type: none;
   position: absolute;
 }
+#slider {
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 @media only screen and (min-width: 500px){
   .project{
     display: none;
@@ -63,7 +77,14 @@
   .burger{
     display: none;
   }
-  .hidden hr {
-    display: none;
+}
+@media only screen and (min-width: 980px){
+  .gallery li {
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+  .projects{
+    margin-left: 13%;
+    margin-right: 13%;
   }
 }
