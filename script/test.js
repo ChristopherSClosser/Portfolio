@@ -158,3 +158,27 @@ $(function() {
 .left {
   float: left!important;
 }
+
+Article.numWordsAll = () => {
+    return Article.all.map(function(textbody){
+      return textbody.body.split(' ').length;
+    }).reduce(function(acc, val){
+      return acc + val;
+    })
+  };
+  (function(acc, val) {
+    if (acc.indexOf(val) === -1) {
+      acc.push(val);
+    }
+    return acc;
+  }, []);
+
+
+          <!-- <span class="center container section large text-white display-bottommiddle">
+            <div class="left hover-text-khaki">&#10094;</div>
+            <div class="right hover-text-khaki">&#10095;</div>
+            <span id="badge1" class="badge demo border transparent hover-white"></span>
+            <span id="badge2" class="badge demo border transparent hover-white"></span>
+            <span id="badge3" class="badge demo border transparent hover-white"></span>
+          </span>
+       -->

@@ -3,7 +3,7 @@
 let projectView = {};
 //populates project li items
 projectView.makeList = function(){
-  Project.all.forEach(function(myNewProjectObject) {
+  Project.all.map(function(myNewProjectObject) {
     $('#project-list').append('<li>' + myNewProjectObject.title + '</li><hr>').hide();
     $('#projects').append(myNewProjectObject.toHtml());
   });
@@ -13,6 +13,18 @@ projectView.makeList = function(){
 projectView.projectFilter = function(select) {
   $('content a:contains("' + select + '")').parent().parent().fadeIn();
 };
+
+//gives me a word count for my project bodies
+projectView.wordCount = function(){
+  let totalWords = Project.all.map(function(project){
+    return project.body.split(' ').length;
+  }).reduce(function(acc, val){
+    return acc + val;
+  });
+  console.log(totalWords);
+  $('.foot').text('Total word count for projects bodies ' + totalWords);
+};
+
 
 //displays gallery imgs in slide show format
 $(function () {
