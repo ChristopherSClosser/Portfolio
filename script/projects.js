@@ -11,15 +11,15 @@ function Project (rawProjectData) {
 
 //method for Project that renders it to the DOM
 Project.prototype.toHtml = function() {
-  var source = $('#project-template').html();
-  var templateRender = Handlebars.compile(source);
+  let source = $('#project-template').html();
+  let templateRender = Handlebars.compile(source);
   return templateRender(this);
 };
 
 //looks for localStorage and/or saves to
 Project.fetchAll = function(callback) {
   if (localStorage.rawData) {
-    var data = JSON.parse(localStorage.rawData);
+    let data = JSON.parse(localStorage.rawData);
     Project.makeProjects(data);
     projectView.makeList();
   } else {

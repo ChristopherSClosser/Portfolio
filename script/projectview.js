@@ -17,7 +17,7 @@ projectView.projectFilter = function(select) {
 //displays gallery imgs in slide show format
 $(function () {
     /* time and transition settings */
-  let change_img_time 	= 5000;
+  let change_img_time 	= 6000;
   let transition_speed	= 300;
 
   let simple_slideshow	= $('#slider'), listItems	= simple_slideshow.children('li'), listLen	= listItems.length, i	= 0,
@@ -34,5 +34,4 @@ $(function () {
 
   listItems.not(':first').hide();
   setInterval(changeList, change_img_time);
-
 });

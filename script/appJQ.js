@@ -38,7 +38,7 @@ $(function(){
       $('content').fadeIn();
     }else{
       $('content').hide();
-      var select = ($(this).text());
+      let select = ($(this).text());
       projectView.projectFilter(select);
       $('section').fadeIn();
     }
@@ -61,9 +61,9 @@ $(function(){
   // },3000);
 
   $(function() {
-    var $window = $(window);
-    var width = $window.width();
-    var height = $window.height();
+    let $window = $(window);
+    let width = $window.width();
+    let height = $window.height();
     setInterval(function () {
       if ((width != $window.width()) || (height != $window.height())) {
         width = $window.width();
