@@ -1,6 +1,6 @@
 'use strict';
 
-var projectView = {};
+let projectView = {};
 //populates project li items
 projectView.makeList = function(){
   Project.all.forEach(function(myNewProjectObject) {
@@ -14,33 +14,25 @@ projectView.projectFilter = function(select) {
   $('content a:contains("' + select + '")').parent().parent().fadeIn();
 };
 
-var slideIndex = 1;
-showDivs(slideIndex);
+//displays gallery imgs in slide show format
+$(function () {
+    /* time and transition settings */
+  let change_img_time 	= 5000;
+  let transition_speed	= 300;
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+  let simple_slideshow	= $('#slider'), listItems	= simple_slideshow.children('li'), listLen	= listItems.length, i	= 0,
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
+  changeList = function () {
+    listItems.eq(i).fadeOut(transition_speed, function () {
+  	  i += 1;
+  	  if (i === listLen) {
+  		  i = 0;
+  	  }
+  	  listItems.eq(i).fadeIn(transition_speed);
+    });
+  };
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName('mySlides');
-  var dots = document.getElementsByClassName('demo');
-  if (n > x.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = 'none';
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(' white', '');
-  }
-  x[slideIndex - 1].style.display = 'block';
-  dots[slideIndex - 1].className += ' white';
-}
+  listItems.not(':first').hide();
+  setInterval(changeList, change_img_time);
+
+});

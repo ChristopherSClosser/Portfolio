@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chris Closser</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="vendor/reset.css">
     <link rel="stylesheet" href="styles/layout.css">
@@ -34,7 +35,7 @@
           <hr>
           <li><a href="https://github.com/ChristopherSClosser">GitHub</a></li>
           <hr>
-          <li><a href="#">Gallery</a></li>
+          <li><a href="index.html">Gallery</a></li>
           <hr>
           <li><a id="me" href="#">Me</a></li>
           <hr>
@@ -46,20 +47,20 @@
         </ul>
       </nav>
     </header>
-    <div class="gallery">
-      <div class="content display-container">
-        <img class="mySlides" src="imgs/boston_harbor.jpg">
-        <img class="mySlides" src="imgs/boston_harbor_dur.jpg">
-        <img class="mySlides" src="">
-        <div class="center container section large text-white display-bottommiddle">
-          <div class="left hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="right hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-          <span class="badge demo border transparent hover-white" onclick="currentDiv(1)"></span>
-          <span class="badge demo border transparent hover-white" onclick="currentDiv(2)"></span>
-          <span class="badge demo border transparent hover-white" onclick="currentDiv(3)"></span>
-        </div>
-      </div>
-    </div>
+    <ul class="gallery" id="slider">
+      <li><img class="mySlides" src="imgs/boston_harbor.jpg" alt="" /></li>
+      <li><img class="mySlides" src="imgs/boston_harbor_dur.jpg" alt="" /></li>
+      <li><img class="mySlides" src="imgs/the_club.jpg" alt="" /></li>
+    </ul>
+
+        <!-- <span class="center container section large text-white display-bottommiddle">
+          <div class="left hover-text-khaki">&#10094;</div>
+          <div class="right hover-text-khaki">&#10095;</div>
+          <span id="badge1" class="badge demo border transparent hover-white"></span>
+          <span id="badge2" class="badge demo border transparent hover-white"></span>
+          <span id="badge3" class="badge demo border transparent hover-white"></span>
+        </span>
+     -->
     <div class="me">
       <h1>Chris Closser</h1><br>
       <h3>My Code Fellows Life</h3><br>
@@ -73,7 +74,7 @@
   <script type="text/javascript" src="script/projectview.js"></script>
   <script type="text/javascript" src="script/appJQ.js"></script>
   <script type="text/javascript" src="script/projects.js"></script>
-  <script>
+  <script type="text/javascript">
     Project.fetchAll();
   </script>
 </html>

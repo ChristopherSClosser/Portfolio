@@ -1,5 +1,5 @@
 'use strict';
-
+(function(module){
 Project.all = [];//this will store my projects
 
 //project constructor
@@ -45,3 +45,5 @@ Project.makeProjects = function(data){
     Project.all.push(new Project(projectObject));
   });
 };
+  module.Project = Project;
+})(window);

@@ -50,6 +50,16 @@ $(function(){
     }
   });
 
+  //$('#slides > img:gt(0)').hide();
+  // setInterval(function() {
+  //   $('#slides > img:first')
+  //     .fadeOut(500)
+  //     .next()
+  //     .fadeIn(500)
+  //     .end()
+  //     .appendTo('#slides');
+  // },3000);
+
   $(function() {
     var $window = $(window);
     var width = $window.width();
@@ -67,4 +77,5 @@ $(function(){
       }
     }, 200);
   });
+
 });
