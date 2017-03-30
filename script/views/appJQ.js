@@ -49,17 +49,7 @@ $(function(){
       $('#main-nav').slideUp('fast');
     }
   });
-
-  //$('#slides > img:gt(0)').hide();
-  // setInterval(function() {
-  //   $('#slides > img:first')
-  //     .fadeOut(500)
-  //     .next()
-  //     .fadeIn(500)
-  //     .end()
-  //     .appendTo('#slides');
-  // },3000);
-
+  
   $(function() {
     let $window = $(window);
     let width = $window.width();

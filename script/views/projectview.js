@@ -21,8 +21,7 @@ projectView.wordCount = function(){
   }).reduce(function(acc, val){
     return acc + val;
   });
-  console.log(totalWords);
-  $('.foot').text('Total word count for projects bodies ' + totalWords);
+  $('.foot').text('Total word count for all projects bodies ' + totalWords);
 };
 
 
@@ -30,7 +29,7 @@ projectView.wordCount = function(){
 $(function () {
     /* time and transition settings */
   let change_img_time 	= 6000;
-  let transition_speed	= 300;
+  let transition_speed	= 400;
 
   let simple_slideshow	= $('#slider'), listItems	= simple_slideshow.children('li'), listLen	= listItems.length, i	= 0,
 

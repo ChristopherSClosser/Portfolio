@@ -47,6 +47,9 @@
   top: 0;
   width: 100%;
 }
+.foot{
+  font-size: .5em;
+}
 .burger{
   font-size: 32px;
   float: right;

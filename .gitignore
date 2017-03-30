@@ -17,3 +17,7 @@
 
 # Dependency directories
 node_modules/
+
+# Un needed files
+script/test.js
+script/routes.js
