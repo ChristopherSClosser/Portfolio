@@ -2,7 +2,7 @@
 
 //  Initialize project using NPM to create and populate a package.json file
 const express = require('express');
-//const requestProxy = require('express-request-proxy');
+const requestProxy = require('express-request-proxy');
 
 // Require the Express package that you installed via NPM, and instantiate the app
 // Remember to install express, and be sure that it's been added to your package.json as a dependency
@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 2020;
 
 // Include all of the static resources as an argument to app.use()
 app.use(express.static('.'));
-//app.get('/github/*', proxyGitHub);
+app.get('/github/*', proxyGitHub);
 
 // Handles the request to gitHub
 function proxyGitHub(req, res){

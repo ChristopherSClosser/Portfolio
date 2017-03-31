@@ -22,6 +22,19 @@
         <hr><br>
       </content>
     </script>
+    <script type="text/x-handlebars">
+      <li>
+        <a href="{{html_url}}" target="_blank">
+        <h3>{{name}}</h3></a>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+          <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+      </li>
+    </script>
   </head>
   <body>
     <header class="header">
