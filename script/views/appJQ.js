@@ -7,16 +7,18 @@ function hideNav(){
     $('#main-nav').slideUp('fast');
   }
 };
+//put in views seperate from onclicks
+
 
 // homeView.init = () => {
-  console.log('in the thing im tryin to do');
-  $('#home').on('click', function(){
-    hideNav();
-    $('.github').fadeOut();
-    $('.me').fadeOut();
-    $('section').fadeOut();
-    $('.gallery').fadeIn();
-  });
+  // console.log('in the thing im tryin to do');
+$('#home').on('click', function(){
+  hideNav();
+  $('.github').fadeOut();
+  $('.me').fadeOut();
+  $('section').fadeOut();
+  $('.gallery').fadeIn();
+});
 // };
 
 $('#gallery').on('click', function(){
@@ -88,7 +90,7 @@ $(function(){
   // AJAX call to gitHub API and render
   $.get('/github/user/repos?type=owner')
   .then(
-    data => data.map(repo => $('.github').append(`<li>${repo.name}</li>`))
+    data => data.map(repo => $('#github-projects').append(`<li>${repo.name}</li>`))
   );
 
   $(function(){
