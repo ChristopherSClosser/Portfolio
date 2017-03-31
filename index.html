@@ -31,11 +31,11 @@
       <button class="burger">&#9776;</button>
       <nav class="hidden" id="main-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a id="home"href="#">Home</a></li>
           <hr>
-          <li><a href="https://github.com/ChristopherSClosser">GitHub</a></li>
+          <li><a id="github"href="#">GitHub</a></li>
           <hr>
-          <li><a href="index.html">Gallery</a></li>
+          <li><a id="gallery" href="#">Gallery</a></li>
           <hr>
           <li><a id="me" href="#">Me</a></li>
           <hr>
@@ -52,6 +52,12 @@
       <li><img class="mySlides" id="size" src="imgs/boston_harbor_dur.jpg" alt="Boston harbor fireworks show 2016" /></li>
       <li><img class="mySlides" src="imgs/the_club.jpg" alt="NWCC @ the Hope Center BGC Lakewood" /></li>
     </ul>
+    <div class="github">
+      <h1><a href="https://github.com/ChristopherSClosser">My GITHUB</a></h1>
+      <ul class="github">
+
+      </ul>
+    </div>
     <div class="me">
       <h1>Chris Closser</h1><br>
       <h3>My Code Fellows Life</h3><br>
@@ -64,9 +70,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
   <script type="text/javascript" src="vendor/page.js" ></script>
   <script type="text/javascript" src="script/views/projectview.js"></script>
-  <!-- <script type="text/javascript" src="script/controllers/routes.js"></script> -->
   <script type="text/javascript" src="script/models/projects.js"></script>
   <script type="text/javascript" src="script/views/appJQ.js"></script>
+  <!-- <script type="text/javascript" src="script/controllers/routes.js"></script> -->
   <script type="text/javascript">
     Project.fetchAll();
   </script>
