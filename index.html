@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/base.css">
+    <!-- project template -->
     <script id="project-template" type="text/x-handlebars"> <!--type must be this for Handlebars use-->
       <content>
         <h3>{{{title}}}</h3>
@@ -22,10 +23,11 @@
         <hr><br>
       </content>
     </script>
+    <!-- repo template -->
     <script id="repo-template" type="text/x-handlebars">
-      <li>
+      <li><br>
         <a href="{{html_url}}" target="_blank">
-        <h3>{{name}}</h3></a>
+        <h3>{{name}}</h3></a><br>
         <p>Description: {{description}}</p>
         <p>Language: {{language}}</p>
         <p>Created: {{created_at}}</p>
@@ -33,7 +35,7 @@
         {{#if watchers_count}}
           <p>{{watchers_count}} watching this repo</p>
         {{/if}}
-        <hr>
+        <br><hr>
       </li>
     </script>
   </head>
@@ -89,7 +91,7 @@
   <script src="script/models/repo.js"></script>
   <script src="script/models/projects.js"></script>
   <script src="script/views/appJQ.js"></script>
-  <!-- <script type="text/javascript" src="script/controllers/routes.js"></script> -->
+  <script src="script/controllers/routes.js"></script>
   <script type="text/javascript">
     Project.fetchAll();
   </script>

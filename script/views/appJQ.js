@@ -1,17 +1,20 @@
 'use strict';
 
-// const homeView = {};
+const homeView = {};
+
+homeView.init = () => {
+  $('.github').fadeOut();
+  $('section').fadeOut();
+  $('.me').fadeOut();
+  $('.gallery').fadeIn();
+};
+
 
 function hideNav(){
   if (window.innerWidth <= 500){
     $('#main-nav').slideUp('fast');
   }
 };
-
-//put in views seperate from onclicks
-// homeView.init = () => {
-
-// };
 
 $('#home').on('click', function(){
   hideNav();
@@ -69,8 +72,9 @@ $(function(){
 
   $('#project-list li').on('click', function(e){
     e.preventDefault();
-    $('.gallery').hide();
-    $('.me').hide();
+    $('.github').fadeOut();
+    $('.gallery').fadeOut();
+    $('.me').fadeOut();
 
     if ($(this).text() === 'Show all'){
       $('section').fadeIn();
@@ -82,12 +86,35 @@ $(function(){
       $('section').fadeIn();
     }
 
-    $('#project-list').hide();
+    $('#project-list').slideUp('fast');
 
     if (window.innerWidth <= 500){
       $('#main-nav').slideUp('fast');
     }
   });
+
+  //displays gallery imgs in slide show format
+  $(function () {
+      /* time and transition settings */
+    let change_img_time 	= 6000;
+    let transition_speed	= 400;
+
+    let simple_slideshow	= $('#slider'), listItems	= simple_slideshow.children('li'), listLen	= listItems.length, i	= 0,
+
+    changeList = function () {
+      listItems.eq(i).fadeOut(transition_speed, function () {
+    	  i += 1;
+    	  if (i === listLen) {
+    		  i = 0;
+    	  }
+    	  listItems.eq(i).fadeIn(transition_speed);
+      });
+    };
+
+    listItems.not(':first').hide();
+    setInterval(changeList, change_img_time);
+  });
+
 
 //function to handle live window sizing
   $(function(){
