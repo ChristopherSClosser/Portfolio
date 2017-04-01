@@ -10,6 +10,7 @@ homeView.init = () => {
 };
 
 
+
 function hideNav(){
   if (window.innerWidth <= 500){
     $('#main-nav').slideUp('fast');
