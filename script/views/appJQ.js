@@ -7,11 +7,12 @@ function hideNav(){
     $('#main-nav').slideUp('fast');
   }
 };
+
 //put in views seperate from onclicks
-
-
 // homeView.init = () => {
-  // console.log('in the thing im tryin to do');
+
+// };
+
 $('#home').on('click', function(){
   hideNav();
   $('.github').fadeOut();
@@ -19,7 +20,6 @@ $('#home').on('click', function(){
   $('section').fadeOut();
   $('.gallery').fadeIn();
 });
-// };
 
 $('#gallery').on('click', function(){
   hideNav();
@@ -38,6 +38,8 @@ $('#me').on('click', function(){
 });
 
 $('#github').on('click', function(){
+  //call to get github-projects the callback is the repoView
+  repos.requestRepos(repoView.index);
   hideNav();
   $('.gallery').fadeOut();
   $('section').fadeOut();
@@ -87,12 +89,7 @@ $(function(){
     }
   });
 
-  // AJAX call to gitHub API and render
-  $.get('/github/user/repos?type=owner')
-  .then(
-    data => data.map(repo => $('#github-projects').append(`<li>${repo.name}</li>`))
-  );
-
+//function to handle live window sizing
   $(function(){
     let $window = $(window);
     let width = $window.width();
