@@ -27,11 +27,10 @@ function proxyGitHub(req, res){
   }))(req, res);
 }
 
-
 app.get('.', function(request, response) {
   // Using the response object, send the index.html file back to the user
   response.sendFile('index.html', {root: '.'})
 });
 
-//Write a new route that will handle a request and send the new.html file back to the user and log the PORT
+//a new route that will handle a request and send the new.html file back to the user and log the PORT
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));

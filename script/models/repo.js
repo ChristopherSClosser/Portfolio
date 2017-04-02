@@ -9,7 +9,7 @@
 
     $.get('/github/user/repos?type=owner')
       .then(
-        // render the data
+        // render the data to repos.all
         data => repos.all = data)
       .then(callback)
   };

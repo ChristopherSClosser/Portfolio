@@ -27,6 +27,12 @@ li p{
   font-weight: bold;
   font-size: 1.1em;
 }
+content p{
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #6d6464;
+}
 h1 a:hover{
   color: black;
 }
