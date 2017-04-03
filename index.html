@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/base.css">
+    <!-- project template -->
     <script id="project-template" type="text/x-handlebars"> <!--type must be this for Handlebars use-->
       <content>
         <h3>{{{title}}}</h3>
@@ -22,6 +23,21 @@
         <hr><br>
       </content>
     </script>
+    <!-- github repo template -->
+    <script id="repo-template" type="text/x-handlebars">
+      <li><br>
+        <a href="{{html_url}}" target="_blank">
+        <h3>{{name}}</h3></a><br>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+          <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+        <br><hr>
+      </li>
+    </script>
   </head>
   <body>
     <header class="header">
@@ -31,11 +47,11 @@
       <button class="burger">&#9776;</button>
       <nav class="hidden" id="main-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a id="home"href="#">Home</a></li>
           <hr>
-          <li><a href="https://github.com/ChristopherSClosser">GitHub</a></li>
+          <li><a id="github"href="#">GitHub</a></li>
           <hr>
-          <li><a href="index.html">Gallery</a></li>
+          <li><a id="gallery" href="#">Gallery</a></li>
           <hr>
           <li><a id="me" href="#">Me</a></li>
           <hr>
@@ -52,6 +68,13 @@
       <li><img class="mySlides" id="size" src="imgs/boston_harbor_dur.jpg" alt="Boston harbor fireworks show 2016" /></li>
       <li><img class="mySlides" src="imgs/the_club.jpg" alt="NWCC @ the Hope Center BGC Lakewood" /></li>
     </ul>
+    <div class="github">
+      <h1><a href="https://github.com/ChristopherSClosser">My GITHUB</a></h1>
+      <h2>List of my github projects</h2><br><hr>
+      <ul id="github-projects">
+
+      </ul>
+    </div>
     <div class="me">
       <h1>Chris Closser</h1><br>
       <h3>My Code Fellows Life</h3><br>
@@ -62,11 +85,16 @@
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
-  <script type="text/javascript" src="vendor/page.js" ></script>
-  <script type="text/javascript" src="script/views/projectview.js"></script>
-  <!-- <script type="text/javascript" src="script/controllers/routes.js"></script> -->
-  <script type="text/javascript" src="script/models/projects.js"></script>
-  <script type="text/javascript" src="script/views/appJQ.js"></script>
+  <script src="vendor/page.js" ></script>
+  <script src="script/views/projectview.js"></script>
+  <script src="script/views/repoview.js"></script>
+  <script src="script/views/homeview.js"></script>
+  <script src="script/views/windowview.js"></script>
+  <script src="script/views/aboutview.js"></script>
+  <script src="script/views/appJQ.js"></script>
+  <script src="script/controllers/routes.js"></script>
+  <script src="script/models/repo.js"></script>
+  <script src="script/models/projects.js"></script>
   <script type="text/javascript">
     Project.fetchAll();
   </script>
