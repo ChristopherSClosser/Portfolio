@@ -4,6 +4,7 @@
 (function(module){
   const projectView = {};
 
+  //show only project elements
   projectView.init = () => {
     hideNav();
     $('.github').fadeOut();

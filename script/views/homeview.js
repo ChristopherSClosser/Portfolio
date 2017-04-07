@@ -3,6 +3,7 @@
 (function(module){
   const homeView = {};
 
+  //show only homeView elements
   homeView.init = () => {
     hideNav();
     $('.github').fadeOut();
