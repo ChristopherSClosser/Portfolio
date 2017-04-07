@@ -14,7 +14,7 @@ $(function(){
 
 $('#home, #github, #gallery, #me').on('click', function(){
   if (window.innerWidth <= 500){
-    $('#main-nav').slideUp('slow');
+    $('#main-nav').slideUp('fast');
   }
 });
 
@@ -45,7 +45,7 @@ $('#home, #github, #gallery, #me').on('click', function(){
     $('#project-list').slideUp('fast');
 
     if (window.innerWidth <= 500){
-      $('#main-nav').slideUp('slow');
+      $('#main-nav').slideUp('fast');
     }
   });
 });
