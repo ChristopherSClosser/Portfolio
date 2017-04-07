@@ -3,8 +3,8 @@
 (function(module){
   const aboutView = {};
 
+  //show only aboutView elements
   aboutView.init = () => {
-    hideNav();
     $('.github').fadeOut();
     $('.gallery').fadeOut();
     $('section').fadeOut();

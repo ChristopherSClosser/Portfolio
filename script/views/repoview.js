@@ -20,7 +20,6 @@
     //call to get github-projects the callback is the repoView
     repos.requestRepos(repoView.index);
     //show only gitHub elements
-    hideNav();
     $('.gallery').fadeOut();
     $('section').fadeOut();
     $('.me').fadeOut();

@@ -6,7 +6,6 @@
 
   //show only project elements
   projectView.init = () => {
-    hideNav();
     $('.github').fadeOut();
     $('.gallery').fadeOut();
     $('.me').fadeOut();

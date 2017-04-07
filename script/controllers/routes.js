@@ -9,6 +9,6 @@ page('/gallery', homeView.init);
 
 page('/github', repoView.init);
 
-page('/projects', projectView.init);
+// page('/projects', projectView.init);
 
 page();

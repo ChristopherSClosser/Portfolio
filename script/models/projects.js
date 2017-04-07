@@ -47,5 +47,6 @@
       Project.all.push(new Project(projectObject));
     });
   };
+
   module.Project = Project;
 })(window);

@@ -1,11 +1,5 @@
 'use strict';
 
-function hideNav(){
-  if (window.innerWidth <= 500){
-    $('#main-nav').slideUp('fast');
-  }
-};
-
 //function for mobile menu on page ready
 $(function(){
   $('section').hide();
@@ -18,9 +12,15 @@ $(function(){
     }
   });
 
+$('#home, #github, #gallery, #me').on('click', function(){
+  if (window.innerWidth <= 500){
+    $('#main-nav').slideUp('slow');
+  }
+});
+
   $('.list-projects').on('click', function(){
     if ($('ul').is(':hidden')){
-      $('#project-list').animate({width:'toggle'},350);
+      $('#project-list').animate({width: 'toggle'},350);
     } else {
       $('#project-list').slideUp('fast');
     }
@@ -45,7 +45,7 @@ $(function(){
     $('#project-list').slideUp('fast');
 
     if (window.innerWidth <= 500){
-      $('#main-nav').slideUp('fast');
+      $('#main-nav').slideUp('slow');
     }
   });
 });

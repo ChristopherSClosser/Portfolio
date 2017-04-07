@@ -27,14 +27,12 @@ function proxyGitHub(req, res){
   }))(req, res);
 }
 
-
-  // Using the response object, send the index.html file back to the user
-  app.get('/home', (req, res) => res.sendFile('index.html', {root: '.'}));
-  app.get('/about', (req, res) => res.sendFile('index.html', {root: '.'}));
-  app.get('/gallery', (req, res) => res.sendFile('index.html', {root: '.'}));
-  app.get('/github', (req, res) => res.sendFile('index.html', {root: '.'}));
-  app.get('/projects', (req, res) => res.sendFile('index.html', {root: '.'}));
-
+// Using the response object, send the index.html file back to the user
+app.get('/home', (req, res) => res.sendFile('index.html', {root: '.'}));
+app.get('/about', (req, res) => res.sendFile('index.html', {root: '.'}));
+app.get('/gallery', (req, res) => res.sendFile('index.html', {root: '.'}));
+app.get('/github', (req, res) => res.sendFile('index.html', {root: '.'}));
+app.get('/projects', (req, res) => res.sendFile('index.html', {root: '.'}));
 
 //a new route that will handle a request and send the new.html file back to the user and log the PORT
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));

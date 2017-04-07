@@ -2,14 +2,18 @@
 
 //function to handle live window sizing
 $(function(){
-  let $window = $(window);
-  let width = $window.width();
-  let height = $window.height();
+  let $window = $(window),
+  width = $window.width(),
+  height = $window.height();
+
+  //handles how the nav behaves on a window size change
   $(window).on('resize', function(){
     setInterval(function () {
+
       if ((width != $window.width()) || (height != $window.height())) {
         width = $window.width();
         height = $window.height();
+
         if (width >= 500){
           $('#main-nav').show();
         }else if (width <= 500){
