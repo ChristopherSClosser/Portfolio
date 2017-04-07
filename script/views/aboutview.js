@@ -9,6 +9,7 @@
     $('.gallery').fadeOut();
     $('section').fadeOut();
     $('.me').fadeIn();
-  }
+  };
+
   module.aboutView = aboutView;
 })(window);
