@@ -4,7 +4,6 @@
   const aboutView = {};
 
   aboutView.init = () => {
-    console.log('aboutView.init');
     hideNav();
     $('.github').fadeOut();
     $('.gallery').fadeOut();

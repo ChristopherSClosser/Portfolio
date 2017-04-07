@@ -15,5 +15,14 @@
       repos.with('language').map(templateRender)
     );
   };
+
+  repoView.init = () => {
+    hideNav();
+    $('.gallery').fadeOut();
+    $('section').fadeOut();
+    $('.me').fadeOut();
+    $('.github').fadeIn();
+  }
+
   module.repoView = repoView;
 })(window);

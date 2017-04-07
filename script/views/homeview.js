@@ -4,7 +4,6 @@
   const homeView = {};
 
   homeView.init = () => {
-    console.log('homeView.init');
     hideNav();
     $('.github').fadeOut();
     $('section').fadeOut();
