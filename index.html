@@ -45,19 +45,19 @@
         Chris Closser
       </div>
       <button class="burger">&#9776;</button>
-      <nav class="hidden" id="main-nav">
+      <nav class="hidden main-nav" id="main-nav">
         <ul>
-          <li><a id="home"href="#">Home</a></li>
+          <li><a id="home"href="/home">Home</a></li>
           <hr>
-          <li><a id="github"href="#">GitHub</a></li>
+          <li><a id="github"href="/github">GitHub</a></li>
           <hr>
-          <li><a id="gallery" href="#">Gallery</a></li>
+          <li><a id="gallery" href="/gallery">Gallery</a></li>
           <hr>
-          <li><a id="me" href="#">Me</a></li>
+          <li><a id="me" href="/about">Me</a></li>
           <hr>
-          <li><a class="list-projects" href="#">Projects</a>
+          <li ><a class="list-projects" href="">Projects</a>
             <ul class="hidden" id="project-list"><hr>
-              <li><a id="all" href="#">Show all</a></li><hr>
+              <li><a href="" id="all">Show all</a></li><hr>
             </ul>
           </li>
         </ul>
@@ -72,7 +72,6 @@
       <h1><a href="https://github.com/ChristopherSClosser">My GITHUB</a></h1>
       <h2>List of my github projects</h2><br><hr>
       <ul id="github-projects">
-
       </ul>
     </div>
     <div class="me">
@@ -86,6 +85,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
   <script src="vendor/page.js" ></script>
+  <script src="script/models/repo.js"></script>
   <script src="script/views/projectview.js"></script>
   <script src="script/views/repoview.js"></script>
   <script src="script/views/homeview.js"></script>
@@ -93,7 +93,6 @@
   <script src="script/views/aboutview.js"></script>
   <script src="script/views/appJQ.js"></script>
   <script src="script/controllers/routes.js"></script>
-  <script src="script/models/repo.js"></script>
   <script src="script/models/projects.js"></script>
   <script type="text/javascript">
     Project.fetchAll();

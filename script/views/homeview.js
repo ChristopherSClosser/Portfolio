@@ -3,9 +3,8 @@
 (function(module){
   const homeView = {};
 
+  //show only homeView elements
   homeView.init = () => {
-    console.log('homeView.init');
-    hideNav();
     $('.github').fadeOut();
     $('section').fadeOut();
     $('.me').fadeOut();
@@ -16,11 +15,12 @@
 
 //displays gallery imgs in slide show format
 $(function () {
-    /* time and transition settings */
-  let change_img_time 	= 6000;
-  let transition_speed	= 400;
-
-  let simple_slideshow	= $('#slider'), listItems	= simple_slideshow.children('li'), listLen	= listItems.length, i	= 0,
+  /* time and transition settings */
+  let change_img_time 	= 6000,
+  transition_speed	= 400,
+  simple_slideshow	= $('#slider'),
+  listItems	= simple_slideshow.children('li'),
+  listLen	= listItems.length, i	= 0,
 
   changeList = function () {
     listItems.eq(i).fadeOut(transition_speed, function () {

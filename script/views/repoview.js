@@ -15,5 +15,16 @@
       repos.with('language').map(templateRender)
     );
   };
+
+  repoView.init = () => {
+    //call to get github-projects the callback is the repoView
+    repos.requestRepos(repoView.index);
+    //show only gitHub elements
+    $('.gallery').fadeOut();
+    $('section').fadeOut();
+    $('.me').fadeOut();
+    $('.github').fadeIn();
+  }
+
   module.repoView = repoView;
 })(window);
