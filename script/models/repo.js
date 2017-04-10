@@ -11,7 +11,7 @@
       .then(
         // render the data to repos.all
         data => repos.all = data)
-      .then(callback)
+      .then(callback);
   };
 
   repos.with = attr => repos.all.filter(repo => repo[attr]);
