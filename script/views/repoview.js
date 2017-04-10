@@ -24,7 +24,7 @@
     $('section').fadeOut();
     $('.me').fadeOut();
     $('.github').fadeIn();
-  }
+  };
 
   module.repoView = repoView;
 })(window);

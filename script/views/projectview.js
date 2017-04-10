@@ -1,6 +1,5 @@
 'use strict';
 
-
 (function(module){
   const projectView = {};
 
@@ -10,7 +9,7 @@
     $('.gallery').fadeOut();
     $('.me').fadeOut();
     $('section').fadeIn();
-  }
+  };
 
   //populates project li items
   projectView.makeList = function(){
@@ -35,5 +34,5 @@
     $('.foot').text('Total word count for all projects bodies ' + totalWords);
   };
 
-module.projectView = projectView;
+  module.projectView = projectView;
 })(window);
