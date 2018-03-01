@@ -6,6 +6,13 @@ $(function(){
     width = $window.width(),
     height = $window.height();
 
+  window.addEventListener('load',function() {
+    setTimeout(function(){
+      // This hides the address bar:
+      window.scrollTo(0, 1);
+    }, 0);
+  });
+
   //handles how the nav behaves on a window size change
   $(window).on('resize', function(){
     setInterval(function () {
