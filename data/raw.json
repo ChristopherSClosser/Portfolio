@@ -33,5 +33,12 @@
     "dateCreated": "Oct 29, 2017",
     "category": "401",
     "thumbImg": " src='imgs/social_recon.png'"
+  },
+  {
+    "title": "<a href='https://github.com/ChristopherSClosser/JamShare-API/blob/master/README.md'>JamShare</a>",
+    "body": "JavaScript 401 final group project.",
+    "dateCreated": "Jun 11, 2017",
+    "category": "401",
+    "thumbImg": " src='imgs/jamshare.png'"
   }
 ]
