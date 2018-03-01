@@ -25,8 +25,7 @@
       projectView.wordCount();
     } else {
       //ajax call
-      $.getJSON('data/raw.json')
-      .then(function(data){
+      $.getJSON('data/raw.json').then(function(data){
         localStorage.setItem('data', data);
         localStorage.rawData = JSON.stringify(data);
         Project.makeProjects(data);
