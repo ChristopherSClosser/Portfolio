@@ -8,7 +8,7 @@ https://chrisclosser.herokuapp.com
 
 ### Author
 ---
-* [ChristopherSClosser](https://github.com/ChristopherSClosser/Portfolio)
+* [ChristopherSClosser](https://github.com/ChristopherSClosser)
 
 ---
 
