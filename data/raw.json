@@ -2,7 +2,7 @@
   {
     "title": "<a href='https://christophersclosser.github.io/salmon-cookies/'>Salmon Cookies</a>",
     "sub": "Utilizing JavaScript to Populate HTML Dynamically",
-    "body": "&emsp;&emsp;Showing projected sales at various locations, it displays these projections on a table and allows the user to add locations to the chart via a form.",
+    "body": "Showing projected sales at various locations, it displays these projections on a table and allows the user to add locations to the chart via a form.",
     "dateCreated": "Feb 13, 2017",
     "category": "201",
     "thumbImg": " src='imgs/sal_cookies.png'"
@@ -18,7 +18,7 @@
   {
     "title": "<a href='https://christophersclosser.github.io/fight-code/'>Fight Code</a>",
     "sub": "A Game to Test Your Coding Skills.",
-    "body": "&emsp;&emsp;A web based fighting game with JavaScript and HTML questions. Built in four days from conception to deployment, by a four person self managed team using:  <ul class='plain'><br><li>- GitHub Projects for work flow</li> <li>- HTML & CSS</li> <li>- JavaScript</li></ul>",
+    "body": "A web based fighting game with JavaScript and HTML questions. Built in four days from conception to deployment, by a four person self managed team using: <br><br>- GitHub Projects for work flow <br>- HTML & CSS <br>- JavaScript",
     "dateCreated": "Feb 24, 2017",
     "category": "201",
     "thumbImg": " src='imgs/fight_code.png'"
@@ -26,7 +26,7 @@
   {
     "title": "<a href='https://github.com/ChristopherSClosser/write-me/blob/master/README.md'>write-me</a>",
     "sub": "A PyPI Package to Automatically Generate Your README",
-    "body": "&emsp;&emsp;Created by a five person team in four days. Write-me generates concise, effective, and specific READMEs for Python, Django, Flask, Pyramid, or <em>any</em> project. Searching through the codebase under which it is installed, it uses filepaths, docstrings, web framework specifications, installed requirements, continuous integration (TravisCI and Coveralls badges), and other user-added data to generate a professional and informative README.md file.",
+    "body": "Created by a five person team in four days.<br><br>Write-me generates concise, effective, and specific READMEs for Python, Django, Flask, Pyramid, or <em>any</em> project. Searching through the codebase under which it is installed, it uses filepaths, docstrings, web framework specifications, installed requirements, continuous integration (TravisCI and Coveralls badges), and other user-added data to generate a professional and informative README.md file.<br><br>- Elegant, automatic Markdown formatting <br><br>- Commandline options for Django, Pyramid, and Flask <br><br>- Installation, testing, and local serving instructions based on codebase",
     "dateCreated": "Dec 6, 2017",
     "category": "401",
     "thumbImg": " src='imgs/write-me.png'"
@@ -34,7 +34,7 @@
   {
     "title": "<a href='https://github.com/famavott/osint-scraper'>Social Recon</a>",
     "sub": "Application That Locates and Compiles Information About Online Personalities.",
-    "body": "&emsp;&emsp;Given a username and/or email address, you can investigate your own online presence, easily see if a username and email is already in use, summarize the digital footprint of someone you know, or uncover the person behind a specific username.<br>Initially a four day group project started by a four person team, we now have a fifth member and a translation in French.",
+    "body": "Given a username and/or email address, you can investigate your own online presence, easily see if a username and email is already in use, summarize the digital footprint of someone you know, or uncover the person behind a specific username.<br><br>Initially a four day group project started by a four person team, we now have a fifth member and a translation in French.",
     "dateCreated": "Oct 29, 2017",
     "category": "401",
     "thumbImg": " src='imgs/social_recon.png'"
@@ -42,15 +42,15 @@
   {
     "title": "<a href='https://github.com/ChristopherSClosser/JamShare-API/blob/master/README.md'>JamShare</a>",
     "sub": "Community for Musicians to Store, Share, and Collaborate on,<br>Personal and Original Individual Instrument Tracks",
-    "body": "&emsp;&emsp;JamShare is an open-source, music-sharing platform designed to allow musicians to share individual components of their music, (like a guitar riff or individual drum tracks), and connect with other artists who are looking for collaboration on their own jam. With the opportunity for mix engineers, audio techs, and mastering engineers to join the community.",
+    "body": "JamShare is an open-source, music-sharing platform designed to allow musicians to share individual components of their music, (like a guitar riff or individual drum tracks), and connect with other artists who are looking for collaboration on their own jam. With the opportunity for mix engineers, audio techs, and mastering engineers to join the community.<br><br>Built in four days by a four person team utilizing:<br><br>- JavaScript - <em>a full-stack application with its own RESTful API.</em><br><br>- MongoDB and Mongoose.js - <em>to store information.</em><br><br>- Mocha and Chai - <em>for back-end testing.</em>",
     "dateCreated": "Jun 11, 2017",
     "category": "401",
     "thumbImg": " src='imgs/jamshare.png'"
   },
   {
     "title": "<a href='https://github.com/401JS-iOS/JSbackend/blob/master/README.md'>DEVolunteer</a>",
-    "sub": "",
-    "body": "&emsp;&emsp;JavaScript 401 midterm group project.",
+    "sub": "Connecting Developers and Non-Profits for the Greater Good",
+    "body": "As a developer, you can reach out to non-profit organizations (NPO's) that are looking for the perfect dev to build their app or website. If you've already collaborated with a specific NPO, you have the option to review your overall experience.<br><br>As a non-profit organization, you can post the project(s) you need tackled, and reach out to developers who are interested in working with you. You can also review your experience(s) with specific Developers you've worked with.<br><br>- Full-stack application with an iOS front-end, and RESTful JS API as a back-end.",
     "dateCreated": "May 14, 2017",
     "category": "401",
     "thumbImg": " src='imgs/devolunteer.png'"
