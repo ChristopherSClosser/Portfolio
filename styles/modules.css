@@ -31,7 +31,7 @@
 }
 
 /*media query goes here for a screen larger than the min-width */
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 739px) {
     #main-nav {
         display: inline-block;
         height: .5em;

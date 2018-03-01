@@ -14,12 +14,20 @@ $(function(){
         width = $window.width();
         height = $window.height();
 
-        if (width >= 500){
+        if (width >= 739){
           $('#main-nav').show();
-        }else if (width <= 500){
+        }else if (width <= 739){
           $('#main-nav').hide();
         }
       }
     }, 1000);
   });
+});
+
+$(function() {
+  setTimeout(function() {
+    if(window.pageYOffset !== 0) return;
+    window.scrollTo(0, window.pageYOffset + 1);
+
+  }, 1000);
 });
