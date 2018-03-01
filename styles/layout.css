@@ -125,7 +125,7 @@ ul.plain {
     color: rgb(60, 45, 31);
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 737px) {
     .project {
       display: none;
     }
