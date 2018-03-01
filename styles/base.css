@@ -13,6 +13,8 @@ figure {
 
 h3 {
     font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.75rem;
 }
 
 li {
@@ -30,15 +32,15 @@ a {
 }
 
 li p {
-    font-family: 'Amatic SC', sans-serif;
-    font-weight: bold;
+    font-family: 'Proxima Nova Soft','Helvetica Neue',sans-serif;
+    font-weight: lighter;
     font-size: 1.1em;
 }
 
 content p {
-    font-family: 'Amatic SC', sans-serif;
+    font-family: 'Proxima Nova Soft','Helvetica Neue',sans-serif;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: lighter;
     color: #6d6464;
 }
 

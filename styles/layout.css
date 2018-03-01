@@ -81,6 +81,30 @@
   margin-top: -0.3%;
 }
 
+.date{
+  font-size: 20px;
+  font-style: italic;
+}
+
+.subtitle {
+  font-family: 'Dosis', sans-serif;
+  font-style: italic;
+  font-size: 22px;
+}
+
+ul.plain {
+  margin-left: 5rem;
+}
+
+.plain {
+  font-family: 'Arial Narrow',sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-size: 18px;
+}
+
 #project-list {
     float: right;
     margin-top: 2%;

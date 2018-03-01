@@ -6,6 +6,7 @@
     <title>Chris Closser</title>
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link rel="stylesheet" href="vendor/reset.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
@@ -16,11 +17,12 @@
         <br>
         <h3>{{{ title }}}</h3>
         <hr>
+        <p class="subtitle">{{{ sub }}}</p><br>
         <!--trip handlebars will render correctly html-->
-        <p>{{{ body }}}</p>
         <img{{{ thumbImg }}}>
-        <br>
-        <p>{{ dateCreated }}</p><br>
+        <br><br>
+        <p class="plain">{{{ body }}}</p><br>
+        <p class="date">{{ dateCreated }}</p><br>
         <hr>
         <div class="break"></div>
         <hr>
