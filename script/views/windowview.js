@@ -6,13 +6,6 @@ $(function(){
     width = $window.width(),
     height = $window.height();
 
-  function quickHideAddressBar() {
-    setTimeout(function() {
-      if(window.pageYOffset !== 0) return;
-      window.scrollTo(0, window.pageYOffset + 1);
-
-    }, 1000);
-  }
   //handles how the nav behaves on a window size change
   $(window).on('resize', function(){
     setInterval(function () {
@@ -29,4 +22,12 @@ $(function(){
       }
     }, 1000);
   });
+});
+
+$(function() {
+  setTimeout(function() {
+    if(window.pageYOffset !== 0) return;
+    window.scrollTo(0, window.pageYOffset + 1);
+
+  }, 1000);
 });
