@@ -53,6 +53,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 9999;
 }
 
 .foot {
@@ -69,6 +70,15 @@
     overflow: hidden;
     outline: none;
     transform: translateY(10%);
+}
+
+.break {
+  position: absolute;
+  right: 0px;
+  height: 1em;
+  width: 100%;
+  background-color: #807669;
+  margin-top: -0.3%;
 }
 
 #project-list {

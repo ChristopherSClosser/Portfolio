@@ -40,5 +40,12 @@
     "dateCreated": "Jun 11, 2017",
     "category": "401",
     "thumbImg": " src='imgs/jamshare.png'"
+  },
+  {
+    "title": "<a href='https://github.com/401JS-iOS/JSbackend/blob/master/README.md'>DEVolunteer</a>",
+    "body": "JavaScript 401 midterm group project.",
+    "dateCreated": "May 14, 2017",
+    "category": "401",
+    "thumbImg": " src='imgs/devolunteer.png'"
   }
 ]
