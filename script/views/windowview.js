@@ -14,9 +14,9 @@ $(function(){
         width = $window.width();
         height = $window.height();
 
-        if (width >= 500){
+        if (width >= 739){
           $('#main-nav').show();
-        }else if (width <= 500){
+        }else if (width <= 739){
           $('#main-nav').hide();
         }
       }
