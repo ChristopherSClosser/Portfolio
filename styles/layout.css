@@ -53,6 +53,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 9999;
 }
 
 .foot {
@@ -69,6 +70,41 @@
     overflow: hidden;
     outline: none;
     transform: translateY(10%);
+}
+
+.break {
+  position: absolute;
+  right: 0px;
+  height: 1em;
+  width: 100%;
+  background-color: #807669;
+  margin-top: -0.3%;
+}
+
+.date{
+  font-size: 20px;
+  font-style: italic;
+}
+
+.subtitle {
+  font-family: 'Dosis', sans-serif;
+  font-style: italic;
+  margin-left: .7rem;
+  margin-right: .7rem;
+  font-size: 22px;
+}
+
+ul.plain {
+  margin-left: 5rem;
+}
+
+.plain {
+  font-family: 'Arial Narrow',sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  margin-left: .7rem;
+  margin-right: .7rem;
+  font-size: 16px;
 }
 
 #project-list {
@@ -91,16 +127,26 @@
 
 @media only screen and (min-width: 500px) {
     .project {
-        display: none;
+      display: none;
     }
     .burger {
-        display: none;
+      display: none;
+    }
+    .plain {
+      margin-left: 3rem;
+      margin-right: 3rem;
+      font-size: 18px;
     }
 }
 
 @media only screen and (min-width: 980px) {
     .projects, .github, .gallery li, .me {
-        margin-left: 13%;
-        margin-right: 13%;
+      margin-left: 13%;
+      margin-right: 13%;
+    }
+    .plain {
+      margin-left: 3rem;
+      margin-right: 3rem;
+      font-size: 18px;
     }
 }

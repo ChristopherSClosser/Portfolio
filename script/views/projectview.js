@@ -25,14 +25,14 @@
   };
 
   //gives me a word count for my project bodies
-  projectView.wordCount = function(){
-    let totalWords = Project.all.map(function(project){
-      return project.body.split(' ').length;
-    }).reduce(function(acc, val){
-      return acc + val;
-    });
-    $('.foot').text('Total word count for all projects bodies ' + totalWords);
-  };
+  // projectView.wordCount = function(){
+  //   let totalWords = Project.all.map(function(project){
+  //     return project.body.split(' ').length;
+  //   }).reduce(function(acc, val){
+  //     return acc + val;
+  //   });
+  //   $('.foot').text('Total word count for all projects bodies ' + totalWords);
+  // };
 
   module.projectView = projectView;
 })(window);

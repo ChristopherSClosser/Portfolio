@@ -1,7 +1,7 @@
 # Portfolio
 ---
 ### Description
-My Code Fellows Portfolio
+My Software Portfolio
 
 https://chrisclosser.herokuapp.com
 
