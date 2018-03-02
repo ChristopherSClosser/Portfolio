@@ -63,6 +63,8 @@
 .burger {
     font-size: 32px;
     float: right;
+    margin-top: -0.1rem;
+    padding-right: 0;
     background-color: Transparent;
     background-repeat: no-repeat;
     border: none;
@@ -101,7 +103,7 @@ ul.plain {
 .linked {
   position: absolute;
   margin-top: -8px;
-  right: 2.2rem;
+  right: 2.7rem;
   top: 0.1rem;
 
 }
@@ -113,7 +115,7 @@ ul.plain {
 .ckata {
   position: absolute;
   margin-top: -1.5rem;
-  right: 0rem;
+  right: 0.5rem;
   /* left: 173px; */
   /* margin-left: 6%; */
 }
