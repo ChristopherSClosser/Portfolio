@@ -22,7 +22,7 @@
       let data = JSON.parse(localStorage.rawData);
       Project.makeProjects(data);
       projectView.makeList();
-      projectView.wordCount();
+      // projectView.wordCount();
     } else {
       //ajax call
       $.getJSON('data/raw.json').then(function(data){
@@ -30,7 +30,7 @@
         localStorage.rawData = JSON.stringify(data);
         Project.makeProjects(data);
         projectView.makeList();
-        projectView.wordCount();
+        // projectView.wordCount();
       }, function(err) {
         console.error(err);
       });
