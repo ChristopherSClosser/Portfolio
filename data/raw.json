@@ -56,11 +56,11 @@
     "thumbImg": " src='imgs/devolunteer.png'"
   },
   {
-    "title": "<a href='https://github.com/401JS-iOS/JSbackend/blob/master/README.md'>DEVolunteer</a>",
-    "sub": "Connecting Developers and Non-Profits for the Greater Good",
-    "body": "As a developer, you can reach out to non-profit organizations (NPO's) that are looking for the perfect dev to build their app or website. If you've already collaborated with a specific NPO, you have the option to review your overall experience.<br><br>As a non-profit organization, you can post the project(s) you need tackled, and reach out to developers who are interested in working with you. You can also review your experience(s) with specific Developers you've worked with.<br><br>- Full-stack application with an iOS front-end, and RESTful JS API as a back-end.",
-    "dateCreated": "May 14, 2017",
-    "category": "401",
-    "thumbImg": " src='imgs/devolunteer.png'"
+    "title": "<a href='https://github.com/ChristopherSClosser/try-to-get-by/blob/master/README.md'>BUGS</a>",
+    "sub": "An Experiment in AI and Swarm Mentality",
+    "body": "Pondering the research involving nano technology, and watching insect and avian swarms, made me curious to see if  I could make a two dimensional representation of this behavior. Using Django for the front end and fundamental data structure and algorithm theories on the back end, I was able to come up with something quite convincingly life like... <em>of course totaly under my control</em>.<br><br><b><em>As of now they are able to:</em></b><br>- move freely<br>- eat<br>- breed<br>- die<br>- all while wanting to be near each other<br><br><b><em>I am able to:</em></b><br>- put a population cap <em>or not</em><br>- limit life spans <em>or not</em><br>- auto feed to sustain population<br>- give them a queen or not",
+    "dateCreated": "Jan 7, 2018",
+    "category": "FREE",
+    "thumbImg": " src='imgs/bugs.png'"
   }
 ]

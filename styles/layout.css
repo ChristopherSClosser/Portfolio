@@ -99,10 +99,11 @@ ul.plain {
 }
 
 .linked {
-  position: fixed;
-  top: 2px;
-  left: 193px;
-  margin-left: 5%;
+  position: absolute;
+  margin-top: -8px;
+  right: 2.2rem;
+  top: 0.1rem;
+
 }
 .ilinked {
   width: 2rem;
@@ -110,10 +111,11 @@ ul.plain {
 }
 
 .ckata {
-  position: fixed;
-  top: 18px;
-  left: 173px;
-  margin-left: 6%;
+  position: absolute;
+  margin-top: -1.5rem;
+  right: 0rem;
+  /* left: 173px; */
+  /* margin-left: 6%; */
 }
 .kata {
   height: .4rem;
@@ -152,19 +154,18 @@ ul.plain {
 @media only screen and (min-width: 670px) {
   .ilinked {
     width: 3rem;
+
   }
   .linked {
-    position: fixed;
-    top: 15px;
-    left: 313px;
-    margin-left: 3%;
+    position: initial;
+    float: right;
+    margin-top: .5rem;
   }
 
   .ckata {
-    position: fixed;
-    top: 15px;
-    left: 187px;
-    margin-left: 4%;
+    position: initial;
+    float: right;
+    margin-top: .5rem;
   }
   .kata {
     height: .7rem;
@@ -185,7 +186,7 @@ ul.plain {
       font-size: 18px;
     }
     .linked {
-      margin-left: 5%;
+      /* position: initial; */
     }
 }
 
@@ -200,9 +201,9 @@ ul.plain {
       font-size: 18px;
     }
     .linked {
-      margin-left: 5%;
+      /* margin-left: 5%; */
     }
     .ckata {
-      margin-left: 5%;
+      /* margin-left: 5%; */
     }
 }
