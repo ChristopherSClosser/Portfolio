@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/base.css">
+
     <!-- project template -->
     <script id="project-template" type="text/x-handlebars"> <!--type must be this for Handlebars use-->
       <content>
@@ -45,9 +46,19 @@
     </script>
   </head>
   <body>
-    <header class="header">
+    <header class="header nav-down">
       <div class="my-name">
         Chris Closser
+      </div>
+      <div class="ckata">
+        <a href="https://www.codewars.com/users/moredrums">
+          <img class="kata" src="https://www.codewars.com/users/moredrums/badges/micro" alt="">
+        </a>
+      </div>
+      <div class="linked">
+        <a href='https://www.linkedin.com/in/christophersclosser'>
+          <img class="ilinked" src="imgs/Logo-2C-21px-R.png" alt="">
+        </a>
       </div>
       <button class="burger">&#9776;</button>
       <nav class="hidden main-nav" id="main-nav">
@@ -104,4 +115,5 @@
   <script type="text/javascript">
     Project.fetchAll();
   </script>
+  <!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> -->
 </html>

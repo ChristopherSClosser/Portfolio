@@ -47,7 +47,7 @@
     display: none;
 }
 
-.header {
+.nav-down {
     height: 50px;
     background-color: hsla(24, 67%, 57%, 1);
     position: fixed;
@@ -98,6 +98,25 @@ ul.plain {
   margin-left: 5rem;
 }
 
+.linked {
+  position: fixed;
+  top: 2px;
+  left: 193px;
+  margin-left: 2%;
+}
+.ilinked {
+  width: 2rem;
+}
+
+.ckata {
+  position: fixed;
+  top: 18px;
+  left: 173px;
+  margin-left: 3%;
+}
+.kata {
+  height: .4rem;
+}
 .plain {
   font-family: 'Arial Narrow',sans-serif;
   font-weight: lighter;
@@ -105,6 +124,10 @@ ul.plain {
   margin-left: .7rem;
   margin-right: .7rem;
   font-size: 16px;
+}
+
+.nav-up {
+  top: -86px;
 }
 
 #project-list {
@@ -123,6 +146,29 @@ ul.plain {
 
 #github-projects li {
     color: rgb(60, 45, 31);
+}
+
+@media only screen and (min-width: 670px) {
+  .ilinked {
+    width: 3rem;
+  }
+  .linked {
+    position: fixed;
+    top: 15px;
+    left: 313px;
+    margin-left: 2%;
+  }
+
+  .ckata {
+    position: fixed;
+    top: 15px;
+    left: 187px;
+    margin-left: 2%;
+  }
+  .kata {
+    height: .7rem;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 739px) {
