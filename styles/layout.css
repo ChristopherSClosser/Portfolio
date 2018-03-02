@@ -195,4 +195,10 @@ ul.plain {
       margin-right: 3rem;
       font-size: 18px;
     }
+    .linked {
+      margin-left: 5%;
+    }
+    .ckata {
+      margin-left: 5%;
+    }
 }
