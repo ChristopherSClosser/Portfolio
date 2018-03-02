@@ -102,7 +102,7 @@ ul.plain {
   position: fixed;
   top: 2px;
   left: 193px;
-  margin-left: 4%;
+  margin-left: 5%;
 }
 .ilinked {
   width: 2rem;
@@ -112,7 +112,7 @@ ul.plain {
   position: fixed;
   top: 18px;
   left: 173px;
-  margin-left: 5%;
+  margin-left: 6%;
 }
 .kata {
   height: .4rem;
@@ -163,7 +163,7 @@ ul.plain {
     position: fixed;
     top: 15px;
     left: 187px;
-    margin-left: 2%;
+    margin-left: 4%;
   }
   .kata {
     height: .7rem;
