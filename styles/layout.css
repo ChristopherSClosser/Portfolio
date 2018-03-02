@@ -106,6 +106,7 @@ ul.plain {
 }
 .ilinked {
   width: 2rem;
+  z-index: 9999;
 }
 
 .ckata {
