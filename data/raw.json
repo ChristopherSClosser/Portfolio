@@ -57,8 +57,8 @@
   },
   {
     "title": "<a href='https://github.com/ChristopherSClosser/try-to-get-by/blob/master/README.md'>BUGS</a>",
-    "sub": "An Experiment in AI and Swarm Mentality",
-    "body": "Pondering the research involving nano technology, and watching insect and avian swarms, made me curious to see if  I could make a two dimensional representation of this behavior. Using Django for the front end and fundamental data structure and algorithm theories on the back end, I was able to come up with something quite convincingly life like... <em>of course totaly under my control</em>.<br><br><b><em>As of now they are able to:</em></b><br>- move freely<br>- eat<br>- breed<br>- die<br>- all while wanting to be near each other<br><br><b><em>I am able to:</em></b><br>- put a population cap <em>or not</em><br>- limit life spans <em>or not</em><br>- auto feed to sustain population<br>- give them a queen or not",
+    "sub": "An Experiment in AI and Hive Mind Swarm Intelligence",
+    "body": "Pondering research involving nano technology, and observing insect and avian swarms, peaked my curiosity to see if I could create a two dimensional representation of this behavior. Using Django for the front end and fundamental data structure and algorithm theories on the back end, I was able to come up with something quite convincingly life like... <em>of course totaly under my control</em>.<br><br><b><em>As of now they are able to:</em></b><br>- move freely<br>- eat<br>- breed<br>- die<br>- all while wanting to be near each other<br><br><b><em>I am able to:</em></b><br>- put a population cap <em>or not</em><br>- limit life spans <em>or not</em><br>- auto feed to sustain population<br>- give them a queen <em>or not</em><br><br>From here it will be fairly straight forward to implement a three dimensional environment and initiate tasks.",
     "dateCreated": "Jan 7, 2018",
     "category": "FREE",
     "thumbImg": " src='imgs/bugs.png'"
