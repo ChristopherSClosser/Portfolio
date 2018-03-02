@@ -156,7 +156,7 @@ ul.plain {
     position: fixed;
     top: 15px;
     left: 313px;
-    margin-left: 2%;
+    margin-left: 3%;
   }
 
   .ckata {
@@ -182,6 +182,9 @@ ul.plain {
       margin-left: 3rem;
       margin-right: 3rem;
       font-size: 18px;
+    }
+    .linked {
+      margin-left: 5%;
     }
 }
 

@@ -12,12 +12,14 @@ $(function(){
       // console.log('scrolling down');
       $('.ckata').hide();
       $('.linked').hide();
-      $('header').removeClass('nav-down').addClass('nav-up');
+      $('header').slideUp('fast');
+      // removeClass('nav-down').addClass('nav-up');
     }
     else {
       //Replace this with your function call for upward-scrolling
       // console.log('scrolling up');
-      $('header').removeClass('nav-up').addClass('nav-down');
+      $('header').slideDown('fast');
+      // removeClass('nav-up').addClass('nav-down');
       $('.ckata').fadeIn('fast');
       $('.linked').fadeIn('fast');
     }
