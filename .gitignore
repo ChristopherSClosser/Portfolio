@@ -4,6 +4,7 @@
 *.obj
 *.elf
 *.git
+.me
 
 ENV
 
