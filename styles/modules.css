@@ -1,3 +1,4 @@
+
 #main-nav li:hover {
     color: black;
 }
@@ -15,13 +16,13 @@
     color: rgb(60, 45, 31);
 }
 
+
 #main-nav ul {
     display: block;
     float: right;
     list-style-type: none;
     text-align: right;
     font-weight: lighter;
-    ;
     font-size: 0.8em;
     background: #f1f1f1;
     font-size: 18px;
@@ -29,6 +30,10 @@
     padding: 4%;
     right: 0;
 }
+/* #project-list ul {
+  background: #f1f1f1;
+} */
+
 
 /*media query goes here for a screen larger than the min-width */
 @media only screen and (min-width: 739px) {
@@ -59,4 +64,7 @@
     .hidden hr {
         display: none;
     }
+    /* #project-list ul li {
+      background: linear-gradient(to right, rgba(255,0,0,0), #f1f1f1, #f1f1f1, rgba(255,0,0,0));
+    } */
 }
