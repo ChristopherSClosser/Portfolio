@@ -32,7 +32,7 @@
     "thumbImg": " src='imgs/write-me.png'"
   },
   {
-    "title": "<a href='https://github.com/famavott/osint-scraper'>Social Recon</a>",
+    "title": "<a href='https://github.com/ChristopherSClosser/osint-scraper/blob/master/README.md'>Social Recon</a>",
     "sub": "Application That Locates and Compiles Information About Online Personalities.",
     "body": "Given a username and/or email address, you can investigate your own online presence, easily see if a username and email is already in use, summarize the digital footprint of someone you know, or uncover the person behind a specific username.<br><br>Initially a four day group project started by a four person team, we now have a fifth member and a translation in French.",
     "dateCreated": "Oct 29, 2017",
