@@ -2,6 +2,7 @@
     position: absolute;
     top: 4%;
     z-index: 999;
+    background-color: #807669;
 }
 
 .gallery li img {
@@ -202,6 +203,7 @@ ul.plain {
 /* .dropdown:hover .dropdown-content {
   text-align: left;
   display: block;
+  z-index: 9999999;
 } */
 @media only screen and (min-width: 670px) {
   .ilinked {
@@ -243,10 +245,12 @@ ul.plain {
     .linked {
       /* position: initial; */
     }
+    .dropdown a {
+      padding-right: 2rem;
+    }
     .dropdown {
       position: absolute;
       text-align: left;
-
     }
     .dropdown-content {
       margin-top: 0.1rem;

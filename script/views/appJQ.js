@@ -46,7 +46,8 @@ $(function(){
   // displays project list on click for mobile
   $('.list-projects').on('click', function(){
     if ($('.dropdown-content').is(':hidden')){
-      $('#project-list').animate({width: 'toggle'},350);
+      // $('#project-list').animate({width: 'toggle'},350);
+      $('#project-list').slideDown('fast');
     } else {
       $('#project-list').slideUp('fast');
     }
