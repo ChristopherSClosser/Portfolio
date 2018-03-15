@@ -3,7 +3,7 @@
 (function(module){
   const homeView = {};
 
-  //show only homeView elements
+  // show only homeView elements
   homeView.init = () => {
     $('.github').fadeOut();
     $('section').fadeOut();
@@ -13,7 +13,7 @@
   module.homeView = homeView;
 })(window);
 
-//displays gallery imgs in slide show format
+// displays gallery imgs in slide show format
 $(function () {
   /* time and transition settings */
   let change_img_time 	= 6000,

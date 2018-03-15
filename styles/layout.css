@@ -1,7 +1,7 @@
 .gallery {
     position: absolute;
     top: 4%;
-    z-index: -1;
+    z-index: 999;
 }
 
 .gallery li img {
@@ -27,7 +27,7 @@
     border: 1px solid black;
     text-align: center;
     padding: 4%;
-    background-color: #f1f1f1;
+    background-color: white;
 }
 
 .my-name {
@@ -77,7 +77,7 @@
 .break {
   position: absolute;
   right: 0px;
-  height: 1em;
+  height: 1.25rem;
   width: 100%;
   background-color: #807669;
   margin-top: -0.3%;
@@ -135,12 +135,12 @@ ul.plain {
   top: -86px;
 }
 
-#project-list {
+/* #project-list {
     float: right;
     margin-top: 2%;
     list-style-type: none;
     position: absolute;
-}
+} */
 
 #slider {
     overflow: hidden;
@@ -153,6 +153,56 @@ ul.plain {
     color: rgb(60, 45, 31);
 }
 
+#main-nav ul {
+    display: block;
+    height: 7rem;
+    float: right;
+    list-style-type: none;
+    text-align: right;
+    font-weight: lighter;
+    background: #f1f1f1;
+    font-size: 18px;
+    margin: auto;
+    padding: 4%;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    right: 0;
+}
+
+.dropdown {
+  /* float: left; */
+  overflow: hidden;
+  /* position: absolute; */
+  /* text-align: left; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0rem;
+  padding-left: 0.5rem;
+  margin-left: -.67rem;
+  padding-top: .5rem;
+  width: 7rem;
+  background-color: #f1f1f1;
+  text-align: left;
+  color: #81766a;
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* z-index: 99999; */
+  max-height: 249px;
+  overflow-y: : scroll;
+  overflow-x: hidden;
+}
+
+/* .dropdown:hover {
+} */
+
+/* .dropdown:hover .dropdown-content {
+  text-align: left;
+  display: block;
+} */
 @media only screen and (min-width: 670px) {
   .ilinked {
     width: 3rem;
@@ -176,6 +226,9 @@ ul.plain {
 }
 
 @media only screen and (min-width: 739px) {
+    #main-nav ul {
+      height: 1rem;
+    }
     .project {
       display: none;
     }
@@ -189,6 +242,18 @@ ul.plain {
     }
     .linked {
       /* position: initial; */
+    }
+    .dropdown {
+      position: absolute;
+      text-align: left;
+
+    }
+    .dropdown-content {
+      margin-top: 0.1rem;
+      padding-top: 0.2rem;
+      padding-left: 1.5rem;
+      box-shadow: none;
+      position: initial;
     }
 }
 

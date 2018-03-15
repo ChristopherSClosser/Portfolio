@@ -3,7 +3,7 @@
 (function(module){
   const projectView = {};
 
-  //show only project elements
+  // show only project elements
   projectView.init = () => {
     $('.github').fadeOut();
     $('.gallery').fadeOut();
@@ -11,15 +11,15 @@
     $('section').fadeIn();
   };
 
-  //populates project li items
+  // populates project items
   projectView.makeList = function(){
     Project.all.map(function(myNewProjectObject) {
-      $('#project-list').append('<li>' + myNewProjectObject.title + '</li><hr>').hide();
+      $('#project-list').append('<div >' + myNewProjectObject.title + '</div><hr>').hide();
       $('#projects').append(myNewProjectObject.toHtml());
     });
   };
 
-  //displays correct project when selected
+  // displays correct project when selected
   projectView.projectFilter = function(select) {
     $('content a:contains("' + select + '")').parent().parent().fadeIn();
   };

@@ -3,7 +3,7 @@
 (function(module){
   const aboutView = {};
 
-  //show only aboutView elements
+  // show only aboutView elements
   aboutView.init = () => {
     $('.github').fadeOut();
     $('.gallery').fadeOut();
