@@ -1,34 +1,30 @@
 'use strict';
 
 $(function(){
-  //Keep track of last scroll
+  // Keep track of last scroll
   var lastScroll = 0;
   $(window).scroll(function(event){
-    //Sets the current scroll position
+    // Sets the current scroll position
     var st = $(this).scrollTop();
-    //Determines up-or-down scrolling
+    // Determines up-or-down scrolling
     if (st > lastScroll){
-      //Replace this with your function call for downward-scrolling
-      // console.log('scrolling down');
+      // function call for downward-scrolling
       $('.ckata').hide();
       $('.linked').hide();
       $('header').slideUp('fast');
-      // removeClass('nav-down').addClass('nav-up');
     }
     else {
-      //Replace this with your function call for upward-scrolling
-      // console.log('scrolling up');
+      // function call for upward-scrolling
       $('header').slideDown('fast');
-      // removeClass('nav-up').addClass('nav-down');
       $('.ckata').fadeIn('fast');
       $('.linked').fadeIn('fast');
     }
-    //Updates scroll position
+    // Updates scroll position
     lastScroll = st;
   });
 });
 
-//function for mobile menu on page ready
+// function for mobile menu on page ready
 $(function(){
   $('section').hide();
 
@@ -40,51 +36,40 @@ $(function(){
     }
   });
 
+  // hide nav into burger when width is small
   $('#home, #github, #gallery, #me').on('click', function(){
     if (window.innerWidth <= 739){
       $('#main-nav').slideUp('fast');
-      // function toggleFullScreen() {
-      //   var doc = window.document;
-      //   var docEl = doc.documentElement;
-      //
-      //   var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
-      //   var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
-      //
-      //   if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
-      //     requestFullScreen.call(docEl);
-      //   }
-      //   else {
-      //     cancelFullScreen.call(doc);
-      //   }
-      // }
     }
   });
 
+  // displays project list on click for mobile
   $('.list-projects').on('click', function(){
-    if ($('ul').is(':hidden')){
+    if ($('.dropdown-content').is(':hidden')){
       $('#project-list').animate({width: 'toggle'},350);
     } else {
       $('#project-list').slideUp('fast');
     }
   });
 
-  $('#project-list li').on('click', function(e){
+  // handles projects to display
+  $('.dropdown-content').on('click', function(e){
     e.preventDefault();
     $('.github').fadeOut();
     $('.gallery').fadeOut();
     $('.me').fadeOut();
 
-    if ($(this).text() === 'Show all'){
+    if (e.target.id === 'all'){
       $('section').fadeIn();
       $('content').fadeIn();
     }else{
       $('content').hide();
-      let $select = ($(this).text());
+      let $select = (e.target.text);
       projectView.projectFilter($select);
       $('section').fadeIn();
     }
 
-    $('#project-list').slideUp('fast');
+    $('.dropdown-content').slideUp('fast');
 
     if (window.innerWidth <= 739){
       $('#main-nav').slideUp('fast');

@@ -55,14 +55,21 @@
     #main-nav li {
         display: inline-block;
         list-style-type: none;
+        margin-top: .1rem;
         margin-right: 2%;
     }
-    #project-list, #project-list li, #project-list hr {
-        display: block;
-        margin: 1%;
-    }
+    /* #project-list, #project-list li, #project-list hr {
+      margin-top: -0.2rem;
+      padding-top: 0.5rem;
+      padding-left: 1.5rem;
+      box-shadow: none;
+      position: initial;
+    } */
     .hidden hr {
         display: none;
+    }
+    div.dropdown-content hr {
+      display: block;
     }
     /* #project-list ul li {
       background: linear-gradient(to right, rgba(255,0,0,0), #f1f1f1, #f1f1f1, rgba(255,0,0,0));
