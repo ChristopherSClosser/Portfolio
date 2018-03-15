@@ -5,10 +5,10 @@
 
   // show only homeView elements
   homeView.init = () => {
+    $('.gallery').fadeIn('fast');
     $('.github').fadeOut();
     $('section').fadeOut();
     $('.me').fadeOut();
-    $('.gallery').fadeIn();
   };
   module.homeView = homeView;
 })(window);
