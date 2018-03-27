@@ -21,7 +21,7 @@
         <hr>
         <p class="subtitle">{{{ sub }}}</p><br>
         <!--trip handlebars will render correctly html-->
-        <img{{{ thumbImg }}}>
+        <a {{{ imglink }}}><img{{{ thumbImg }}}></a>
         <br><br>
         <p class="plain">{{{ body }}}</p><br>
         <p class="date">{{ dateCreated }}</p><br>
@@ -66,7 +66,7 @@
         <ul>
           <li><a id="home"href="/home">Home</a></li>
           <hr>
-          <li><a id="github"href="https://github.com/ChristopherSClosser">GitHub</a></li>
+          <li><a id="github" href="https://github.com/ChristopherSClosser" target="_blank">GitHub</a></li>
           <!-- <hr>
           <li><a id="gallery" href="/gallery">Gallery</a></li> -->
           <hr>
@@ -96,11 +96,17 @@
     <div class="me">
       <content>
         <h3>Chris Closser</h3><br>
-        <p class="subtitle">My Software Dev Life</p><br>
+        <p class="subtitle" style="font-style: normal;">Husband | Father | Programmer</p><br>
         <p class="plain">
-          &ensp;&ensp;I have always been obsessed with the inner workings of everything. From opening my "etch a sketch" (I shouldn't have to say what a mess that made) at age 8, to now being able to fix nearly anything, always striving to make it better than before.<br><br>
-          &ensp;&ensp;It is important for every task to have the proper and/or best tools. These days within a few key strokes almost every tool and answer you would possibly need is available. The knowledge base behind this is astronomical and world wide. This means that there is quite a bit of out of date, wrong, and even disinformation.<br><br>
-          &ensp;&ensp;In the past year going through the intensive Code Fellows Seattle coding bootcamp, I have learned how to sort through and find <em>the best</em> tools needed, make it work, then make it better.<br><br>
+          &ensp;&ensp;I have always been obsessed with the inner workings of everything. From opening my "etch a sketch"&mdash;I shouldn't have to say what a mess that made&mdash;at age 8 to now being able to fix nearly anything, always striving to make it better than before.<br><br>
+          &ensp;&ensp;At the same time I was taking stuff apart, I was drawing and building my own concepts out of legos including multi-story houses fully wired for lighting. This led me in high school to take drafting all four years, beginning with hand drawing, to CAD (computer aided drafting), to designing my welding teacher's new house which was built a year later, to winning second place in the state VICA (Vocational Industrail Clubs of America) residential drafting competition. <br><br>
+          &ensp;&ensp;I got my uncle's Tandy 1000 with four color monitor when I was 10 and it was only natural for me to be enamored with computer languages, even down to machine code (binary&mdash;1's and 0's) and the transistors that make up integrated circuits. This had a lot to do with the fact that my father taught micro miniature soldering and circuit board repair in the early 90's for the Air Force, a course into which I was forced at age 13, but ended up loving. He constantly told me I was better at it than his 20+ year old students. I learned from him (both through example and non example) that having the proper tools and knowledge, and even more so having the ability to patiently troubleshoot, is key.<br><br>
+          &ensp;&ensp;I was fortunate enough to serve in the Air Force from '99 to '05 in fuels & logistics. I wanted to be a civil engineer, but new recruits were needed in fuels. As a young barely 20 year old, I headed up our in house network OS(Operating System) upgrade from Windows NT 3.5 to Windows 2000 and again to Windows XP. After making rank of Staff Seargent and being in charge of accounting, I noticed inefficiencies and inaccuracies in the current methods. Specifically transcribing the same information multiple times. For example, dispatch would receive a call for a certain amount of fuel, it would be entered into our main extensive database (along with all other pertinent information), a driver would be dispatched in the proper vehicle with the proper form and pencil, driver when complete calls dispatch who enters in the main db what the driver wrote down, dispatch sends driver to refill, driver calls dispatch after refill (all hand written on forms, and put in main db), at midnight the accountant (with pen and paper) fills out different forms and does some math for each vehicle and storage area, fills out more forms, does some more math with info from two or more seperate db's, fills out a couple more forms (all by hand), and prays all gains and/or losses are within tollerance for the day. If not, it would be a long, tedious process to track down the error. I initially took time to make excell versions of all our accounting forms eliminating the simple math errors. Additionaly, I created an electronic file structure for the excell forms (storage and backup), essentially eliminating 90% of paper usage.
+          <br><br>
+          &ensp;&ensp;After this proof of concept, my geek budy coworker and I wrote a program to automatically complete the nightly closeout process. Using VB(Visual Basic) and SQL(Structured Query Language) this program took all pertinent information from over half a dozen different databases (e.g. live fuel tank levels/volumes) into proper forms, the math is correct, and filed in the right place. The internet at this time was not a good resource for taking on this project. Fortunately, we had the great, big, massive VB and SQL books to answer our questions. In the first month testing phase, management wanted it printed out & filed as normal, then in the second month emailed & printed out. Finally I showed that just an email with a link to the day's folder on the internal network (that was always backed up and available from the beginning) would suffice. After completing my six year Air Force enlistment, I became a general contractor....<br><br>
+
+          &ensp;&ensp;It is important for every task to have the proper and/or best tools. These days, within a few key strokes almost every tool and answer you would possibly need is available. The knowledge base behind this is astronomical and world wide. This means that there is quite a bit of out of date, wrong, and even disinformation.<br><br>
+          &ensp;&ensp;In the past year going through the intensive Code Fellows Seattle coding bootcamp, I have learned how to sort through and find <em>the best</em> tools needed, make it work, then make it better, utilizing any framework and language.<br><br>
         </p>
       </content>
     </div>
