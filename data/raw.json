@@ -1,7 +1,7 @@
 [
   {
     "title": "<a href='https://christophersclosser.github.io/salmon-cookies/'>Salmon Cookies</a>",
-    "sub": "Utilizing JavaScript to Populate HTML Dynamically<br><br><p style='font-size: 18px;'>JavaScript | HTML | CSS | jQuery</p>",
+    "sub": "Utilizing JavaScript and Templating to Populate HTML Dynamically<br><br><p style='font-size: 18px;'>JavaScript | HTML | CSS | jQuery</p>",
     "body": "Showing projected sales at various locations, it displays these projections on a table and allows the user to add locations to the chart via a form.",
     "dateCreated": "Feb 13, 2017",
     "category": "201",
@@ -70,5 +70,14 @@
     "category": "FREE",
     "thumbImg": " src='imgs/bugs.png'",
     "imglink": "href='https://github.com/ChristopherSClosser/try-to-get-by/blob/master/README.md'"
+  },
+  {
+    "title": "<a href='https://interstate-sales.herokuapp.com/'>Interstate Sales</a>",
+    "sub": "Interstate Sales of Auburn, CA<br><br><p style='font-size: 18px;'>Python | Pyramid | RESTful API</p>",
+    "body": "Upgrade client website with database, search option, and the ability to easily add, update, and delete directly on the site.<br><br><p style='font-size: 15px;'><a href='https://github.com/ChristopherSClosser/interstate_sales'><img src='imgs/github.png' style='width: .75rem;'> See project on GitHub</a></p>",
+    "dateCreated": "Mar 1, 2018",
+    "category": "FREE",
+    "thumbImg": " src='imgs/is.png'",
+    "imglink": "href='https://interstate-sales.herokuapp.com/'"
   }
 ]
