@@ -74,7 +74,7 @@
   {
     "title": "<a href='https://interstate-sales.herokuapp.com/'>Interstate Sales</a>",
     "sub": "Interstate Sales of Auburn, CA<br><br><p style='font-size: 18px;'>Python | Pyramid | RESTful API</p>",
-    "body": "Upgrade client website with database, search option, and the ability to easily add, update, and delete directly on the site.<br><br><p style='font-size: 15px;'><a href='https://github.com/ChristopherSClosser/interstate_sales'><img src='imgs/github.png' style='width: .75rem;'> See project on GitHub</a></p>",
+    "body": "Upgrade client website with database, search option, and the ability to easily add, update, and delete directly on the site.<br><br><p style='font-size: 15px;'><a href='https://github.com/ChristopherSClosser/interstate_sales'><img src='imgs/github.png' style='width: .75rem; vertical-align: sub;'> See project on GitHub</a></p>",
     "dateCreated": "Mar 1, 2018",
     "category": "FREE",
     "thumbImg": " src='imgs/is.png'",
