@@ -1,66 +1,83 @@
 [
   {
     "title": "<a href='https://christophersclosser.github.io/salmon-cookies/'>Salmon Cookies</a>",
-    "sub": "Utilizing JavaScript to Populate HTML Dynamically",
+    "sub": "Utilizing JavaScript and Templating to Populate HTML Dynamically<br><br><p style='font-size: 18px;'>JavaScript | HTML | CSS | jQuery</p>",
     "body": "Showing projected sales at various locations, it displays these projections on a table and allows the user to add locations to the chart via a form.",
     "dateCreated": "Feb 13, 2017",
     "category": "201",
-    "thumbImg": " src='imgs/sal_cookies.png'"
+    "thumbImg": " src='imgs/sal_cookies.png'",
+    "imglink": "href='https://christophersclosser.github.io/salmon-cookies/'"
   },
   {
     "title": "<a href='https://christophersclosser.github.io/chocolate-pizza/'>Chocolate Pizza</a>",
-    "sub": "CSS Design",
+    "sub": "CSS Design<br><br><p style='font-size: 18px;'>HTML | CSS</p>",
     "body": "A project in which a design was given and I made it come to life with HTML and CSS.",
     "dateCreated": "Feb 17, 2017",
     "category": "201",
-    "thumbImg": " src='imgs/choco_pizza.png'"
+    "thumbImg": " src='imgs/choco_pizza.png'",
+    "imglink": "href='https://christophersclosser.github.io/chocolate-pizza/'"
   },
   {
     "title": "<a href='https://christophersclosser.github.io/fight-code/'>Fight Code</a>",
-    "sub": "A Game to Test Your Coding Skills.",
+    "sub": "A Game to Test Your Coding Skills<br><br><p style='font-size: 18px;'>JavaScript | HTML | CSS</p>",
     "body": "A web based fighting game with JavaScript and HTML questions. Built in four days from conception to deployment, by a four person self managed team using: <br><br>- GitHub Projects for work flow <br>- HTML & CSS <br>- JavaScript",
     "dateCreated": "Feb 24, 2017",
     "category": "201",
-    "thumbImg": " src='imgs/fight_code.png'"
+    "thumbImg": " src='imgs/fight_code.png'",
+    "imglink": "href='https://christophersclosser.github.io/fight-code/'"
   },
   {
     "title": "<a href='https://github.com/ChristopherSClosser/write-me/blob/master/README.md'>write-me</a>",
-    "sub": "A PyPI Package to Automatically Generate Your README",
+    "sub": "A Pip Installable PyPI Package to Automatically Generate Your README<br><br><p style='font-size: 18px;'>Python | Python Package Index</p>",
     "body": "Created by a five person team in four days.<br><br>Write-me generates concise, effective, and specific READMEs for Python, Django, Flask, Pyramid, or <em>any</em> project. Searching through the codebase under which it is installed, it uses filepaths, docstrings, web framework specifications, installed requirements, continuous integration (TravisCI and Coveralls badges), and other user-added data to generate a professional and informative README.md file.<br><br>- Elegant, automatic Markdown formatting <br><br>- Commandline options for Django, Pyramid, and Flask <br><br>- Installation, testing, and local serving instructions based on codebase",
     "dateCreated": "Dec 6, 2017",
     "category": "401",
-    "thumbImg": " src='imgs/write-me.png'"
+    "thumbImg": " src='imgs/write-me.png'",
+    "imglink": "href='https://github.com/ChristopherSClosser/write-me/blob/master/README.md'"
   },
   {
     "title": "<a href='https://github.com/ChristopherSClosser/osint-scraper/blob/master/README.md'>Social Recon</a>",
-    "sub": "Application That Locates and Compiles Information About Online Personalities.",
+    "sub": "Application That Locates and Compiles Information About Online Personalities.<br><br><p style='font-size: 18px;'>Python | Pyramid | jQuery</p>",
     "body": "Given a username and/or email address, you can investigate your own online presence, easily see if a username and email is already in use, summarize the digital footprint of someone you know, or uncover the person behind a specific username.<br><br>Initially a four day group project started by a four person team, we now have a fifth member and a translation in French.",
     "dateCreated": "Oct 29, 2017",
     "category": "401",
-    "thumbImg": " src='imgs/social_recon.png'"
+    "thumbImg": " src='imgs/social_recon.png'",
+    "imglink": "href='https://github.com/ChristopherSClosser/osint-scraper/blob/master/README.md'"
   },
   {
     "title": "<a href='https://github.com/ChristopherSClosser/JamShare-API/blob/master/README.md'>JamShare</a>",
-    "sub": "Community for Musicians to Store, Share, and Collaborate on,<br>Personal and Original Individual Instrument Tracks",
+    "sub": "Community for Musicians to Store, Share, and Collaborate on,<br>Personal and Original Individual Instrument Tracks<br><br><p style='font-size: 18px;'>MongoDB | Express | AngularJS | Node.js<br><br>AWS & Heroku</p>",
     "body": "JamShare is an open-source, music-sharing platform designed to allow musicians to share individual components of their music, (like a guitar riff or individual drum tracks), and connect with other artists who are looking for collaboration on their own jam. With the opportunity for mix engineers, audio techs, and mastering engineers to join the community.<br><br>Built in four days by a four person team utilizing:<br><br>- JavaScript - <em>a full-stack application with its own RESTful API.</em><br><br>- MongoDB and Mongoose.js - <em>to store information.</em><br><br>- Mocha and Chai - <em>for back-end testing.</em>",
     "dateCreated": "Jun 11, 2017",
     "category": "401",
-    "thumbImg": " src='imgs/jamshare.png'"
+    "thumbImg": " src='imgs/jamshare.png'",
+    "imglink": "href='https://github.com/ChristopherSClosser/JamShare-API/blob/master/README.md'"
   },
   {
     "title": "<a href='https://github.com/401JS-iOS/JSbackend/blob/master/README.md'>DEVolunteer</a>",
-    "sub": "Connecting Developers and Non-Profits for the Greater Good",
+    "sub": "Connecting Developers and Non-Profits for the Greater Good<br><br><p style='font-size: 18px;'>JavaScript | MongoDB | Objective-c</p>",
     "body": "As a developer, you can reach out to non-profit organizations (NPO's) that are looking for the perfect dev to build their app or website. If you've already collaborated with a specific NPO, you have the option to review your overall experience.<br><br>As a non-profit organization, you can post the project(s) you need tackled, and reach out to developers who are interested in working with you. You can also review your experience(s) with specific Developers you've worked with.<br><br>- Full-stack application with an iOS front-end, and RESTful JS API as a back-end.",
     "dateCreated": "May 14, 2017",
     "category": "401",
-    "thumbImg": " src='imgs/devolunteer.png'"
+    "thumbImg": " src='imgs/devolunteer.png'",
+    "imglink": "href='https://github.com/401JS-iOS/JSbackend/blob/master/README.md'"
   },
   {
     "title": "<a href='https://github.com/ChristopherSClosser/try-to-get-by/blob/master/README.md'>BUGS</a>",
-    "sub": "An Experiment in AI and Hive Mind Swarm Intelligence",
+    "sub": "An Experiment in AI and Hive Mind Swarm Intelligence<br><br><p style='font-size: 18px;'>Python | Django | Ajax</p>",
     "body": "Pondering research involving nano technology, and observing insect and avian swarms, peaked my curiosity to see if I could create a two dimensional representation of this behavior. Using Django for the front end and fundamental data structure and algorithm theories on the back end, I was able to come up with something quite convincingly life like... <em>of course totaly under my control</em>.<br><br><b><em>As of now they are able to:</em></b><br>- move freely<br>- eat<br>- procreate<br>- die<br>- all while wanting to be near each other<br><br><b><em>I am able to:</em></b><br>- put a population cap <em>or not</em><br>- limit life spans <em>or not</em><br>- give them a queen <em>or not</em><br>- auto feed to sustain population<br><br>From here it will be fairly straight forward to implement a three dimensional environment and initiate tasks for them to do. My fascination with biology and current nano technology, leaves me thinking about the potential that with proper instructions cancers and non curable viruses in the body could be eradicated.",
-    "dateCreated": "Jan 7, 2018",
+    "dateCreated": "Nov 1, 2017",
     "category": "FREE",
-    "thumbImg": " src='imgs/bugs.png'"
+    "thumbImg": " src='imgs/bugs.png'",
+    "imglink": "href='https://github.com/ChristopherSClosser/try-to-get-by/blob/master/README.md'"
+  },
+  {
+    "title": "<a href='https://interstate-sales.herokuapp.com/'>Interstate Sales</a>",
+    "sub": "Interstate Sales of Auburn, CA<br><br><p style='font-size: 18px;'>Python | Pyramid | RESTful API</p>",
+    "body": "Upgrade client website with database, search option, and the ability to easily add, update, and delete directly on the site.<br><br><p style='font-size: 15px;'><a href='https://github.com/ChristopherSClosser/interstate_sales'><img src='imgs/github.png' style='width: .75rem; vertical-align: sub;'> See project on GitHub</a></p>",
+    "dateCreated": "Mar 1, 2018",
+    "category": "FREE",
+    "thumbImg": " src='imgs/is.png'",
+    "imglink": "href='https://interstate-sales.herokuapp.com/'"
   }
 ]

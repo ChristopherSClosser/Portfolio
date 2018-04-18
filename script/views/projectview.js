@@ -25,7 +25,7 @@
     $('content a:contains("' + select + '")').parent().parent().fadeIn();
   };
 
-  // gives me a word count for my project bodies -------
+  // gives me a word count for my project bodies
   // projectView.wordCount = function(){
   //   let totalWords = Project.all.map(function(project){
   //     return project.body.split(' ').length;
