@@ -2,6 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "301 portfolio",
+  "engines": {
+    "node": "10.3.0"
+  },
   "main": "projects.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
